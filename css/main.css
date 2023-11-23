@@ -5,4 +5,83 @@
     text-decoration: none;
 }
 
+/* formatação do cabeçalho */
+
+#cabecalho .container{
+    background-color: #C82727;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+#menu ul{
+    display: flex;
+    list-style: none;
+}
+
+#menu ul li {
+   margin: 20px 20px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu a:hover{
+    color: yellow;
+    font-weight: 800;
+}
+
+/* #banner{
+    background-image: url(../img/banner-teste.jpg);
+} */
+
+.icones{
+    margin: 10px 10px;
+}
+
+/* formatação do body */
+
+/* formatação dos titulos */
+main{
+    text-align: center;
+}
+
+main h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 10px; 
+    background-color: #C82727;
+    display: inline-block;
+    padding: 5px 70px;
+    border-radius: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+.cardapio{
+    display: flex;
+    justify-content: center;
+    margin: 20px 30px;
+}
+
+.items-cardapio{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.items-cardapio p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
 
