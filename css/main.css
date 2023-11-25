@@ -78,13 +78,17 @@ main h1 {
     display: flex;
     justify-content: center;
     /* margin: 20px 30px; */
+    text-align: center;
+    margin-top: 25px;
 }
 
 .items-cardapio {
     padding: 10px 10px;
-    border: solid 1px #ccc;
+    /* border: solid 1px #ccc; */
     border-radius: 15px;
+    background-color: #ededed;
     margin: 20px;
+    width: calc((100% / 1 ) - 20px);
 }
 
 .items-cardapio p {
@@ -104,14 +108,28 @@ main h1 {
     width: calc((100% / 3) - 30px);
     border: solid 1px #ccc;
     border-radius:15px ;
-    text-align: center;
+     text-align: center; 
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;;
+    font-weight: 400;
 }
 
 .lanches a{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    color: #fff;
+    background-color: #C82727;
+    border-radius: 30px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.teste{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.lanches img{
+    padding-top: 10px;
 }
 
 /* formatção promoções */
