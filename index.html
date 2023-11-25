@@ -22,7 +22,7 @@
 <body>
     <header id="cabecalho">
 
-        <div class="container">
+        <div id="barra-topo" class="container">
             <div class="logotipo">
                 <img src="img/logo.webp" alt="Mr.Burger" width="60">
             </div>
@@ -47,15 +47,17 @@
         </div>
 
         <div id="banner">
-            <img src="img/banner.jpg" alt="" width="300"> 
+            <img src="img/banner.jpg" alt="">
         </div>
     </header>
 
     <main class="container">
         <section id="lista-cardapio">
 
-            <h1>CARDÁPIO</h1>
-            
+            <div class="titulos">
+                <h1>CARDÁPIO</h1>
+            </div>
+
             <div class="cardapio">
                 <div class="items-cardapio">
                     <p>Lanches</p>
@@ -64,7 +66,7 @@
 
                 <div class="items-cardapio">
                     <p>Acompanhamentos</p>
-                    <img src="img/batata-frita.webp" alt="" width="60">
+                    <img src="img/batata-frita.webp" alt="" width="55">
                 </div>
 
                 <div class="items-cardapio">
@@ -81,9 +83,11 @@
         </section>
 
         <section class="mais-pedidos">
-            <h1>MAIS PEDIDOS</h1>
+            <div class="titulos">
+                <h1>MAIS PEDIDOS</h1>
+            </div>
 
-            <div class="lanches">
+            <div class="lista-lanches">
                 <div class="lanches">
                     <img src="img/duplo-cheddar.png" alt="" width="100">
                     <p>Duplo Cheddar</p>
@@ -130,7 +134,10 @@
         </section>
 
         <section class="lista-promocoes">
-            <h1>PROMOÇÕES</h1>
+            <div class="titulos">
+                <h1>PROMOÇÕES</h1>
+            </div>
+
             <div class="promocoes">
                 <div class="lanches">
                     <img src="img/batata-cheddar.png" alt="Batatas Fritas" width="100">
@@ -158,7 +165,7 @@
 
     <footer id="rodape">
         <div class="container">
-            <div class="colunas-rodape">
+            <div class="colunas-rodape fonte-2">
                 <h1>Contato</h1>
                 <ul>
                     <li>lanchonete@gmail.com</li>
@@ -167,7 +174,7 @@
                 </ul>
             </div>
 
-            <div class="colunas-rodape">
+            <div class="colunas-rodape fonte-2">
                 <h1>Mr.Burger</h1>
                 <ul>
                     <li><a href="#">Sobre Nós</a></li>
@@ -176,8 +183,7 @@
                 </ul>
             </div>
 
-
-            <div class="colunas-rodape">
+            <div class="colunas-rodape rede-social">
                 <h1>Redes Sociais</h1>
                 <ul>
                     <img src="img/instagram.webp" alt="Instagram" width="50">
@@ -185,8 +191,11 @@
                     <img src="img/facebook.webp" alt="Facebook" width="50">
                 </ul>
             </div>
+
+            <div class="copyright fonte-2">
+                <p>© 2023 - Todos os direitos são reservados</p>
+            </div>
         </div>
-    </footer>
     </footer>
 </body>
 
