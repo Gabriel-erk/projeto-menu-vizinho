@@ -128,10 +128,6 @@ main h1 {
     padding-bottom: 10px;
 }
 
-.lanches img{
-    padding-top: 10px;
-}
-
 /* formatção promoções */
 
 .promocoes{
@@ -164,6 +160,14 @@ main h1 {
 
 #rodape ul{
     list-style: none;
+}
+
+.colunas-rodape a{
+    color: #fff;
+}
+
+.colunas-rodape a:hover{
+    font-weight: 500;
 }
 
 .rede-social{
