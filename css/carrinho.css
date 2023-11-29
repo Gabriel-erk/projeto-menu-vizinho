@@ -1,0 +1,64 @@
+@import url(main.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-primaria: #9800ce;
+    --cor-secundaria: #2a2f43ea;
+    --cor-fundo:#f5f5f5
+}
+
+.conteudo-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* altura minima é 100% da minha tela */
+    min-height: 100vh;
+    background-color: var(--cor-primaria);
+}
+
+.carrinho{
+    width: 400px;
+    height: min-content;
+    background: var(--cor-fundo);
+    padding: 35px;
+}
+
+.carrinho .cabecalho-carrinho{
+    display: flex;
+}
+
+.carrinho .cabecalho-carrinho button{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    /* altura de linha */
+    line-height: 50%;
+    color: var(--cor-primaria);
+    background: #ddddde50;
+    border: 2px solid #ddddde;
+    border-radius: 8px;
+}
+
+.carrinho .cabecalho-carrinho button:hover{
+    color: #fff;
+    background: var(--cor-primaria);
+    border-color: var(--cor-primaria)
+}
+
+.carrinho .cabecalho-carrinho h3{
+    /* deixando as margens do elemento automaticas, entao centralizara automaticamente */
+    margin: auto;
+    text-align: center;
+    font: 400 1.25rem 'Poppins';
+    color: var(--cor-primaria);
+}
+
