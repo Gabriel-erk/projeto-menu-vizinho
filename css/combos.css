@@ -1,0 +1,36 @@
+@import url(main.css);
+
+.combos {
+     border: solid 1px #F2E5D4; 
+    background-color: #F2E5D4;
+    border-radius: 15px;
+    text-align: center;
+    width: calc((100% / 2 ) - 30px);
+}
+
+.combos span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.combos p {
+    color: #E31919;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.texto-combo {
+    background-color: #fff;
+    border-radius:5px ;
+    display: flex;
+    padding: 40px;
+    /* Coloca o span e o p nos cantos opostos */
+    justify-content: space-between;
+}
+
+.promocoes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}

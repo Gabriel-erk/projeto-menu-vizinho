@@ -62,3 +62,14 @@
     color: var(--cor-primaria);
 }
 
+.carrinho .carrinho-item{
+    background-color: #fff;
+    position: relative;
+    /* vai pegar 1005 da largura do carrinho */
+    width: 100%;
+    margin: 30px 0;
+    border-radius:8px ;
+    /* 0 horizontal 4 na vertical e 18 de desfoque com a cor q eu escolhi */
+    box-shadow: 0 4px 18px #2a2f430f;
+}
+
