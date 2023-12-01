@@ -10,7 +10,19 @@
     color: #000;
 }
 
-.sobre{
+.titulo-pergunta{
+    background-color: #fff;
+    color: #E31919;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; 
+}
+
+
+.pergunta-resposta{
+    margin-top: 20px;
+}
+
+p {
     font-family: 'Poppins', sans-serif;
     font-weight: 500; 
 }

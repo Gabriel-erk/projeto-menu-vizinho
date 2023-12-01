@@ -1,11 +1,15 @@
 @import url(main.css);
 
 .combos {
-     border: solid 1px #F2E5D4; 
+     border: solid 3px #F2E5D4; 
     background-color: #F2E5D4;
     border-radius: 15px;
     text-align: center;
     width: calc((100% / 2 ) - 30px);
+}
+
+.combos:hover{
+    transform: scale(1.05);
 }
 
 .combos span {

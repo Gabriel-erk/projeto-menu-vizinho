@@ -91,7 +91,7 @@ main h1 {
     padding: 10px 10px;
     /* border: solid 1px #ccc; */
     border-radius: 15px;
-    background-color: #ededed;
+    background-color: #ddd;
     margin: 20px;
     width: calc((100% / 1 ) - 20px);
 }
@@ -118,10 +118,6 @@ main h1 {
     font-weight: 400;
 }
 
-.texto-lanche{
-    padding-bottom: 40px;
-}
-
 .lanches img{
     margin-top: 20px;
 }
@@ -134,6 +130,14 @@ main h1 {
     border-radius: 30px;
     padding-left: 75px;
     padding-right: 75px;
+}
+
+.texto-lanche{
+    padding-bottom: 40px;
+}
+
+.preco{
+    font-size: 14px;
 }
 
 /* formatção promoções */
