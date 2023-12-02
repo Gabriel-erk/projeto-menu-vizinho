@@ -68,3 +68,8 @@
     color: #fff;
 }
 
+.finalizar:hover{
+    transform: scale(1.05);
+    transition: all linear 160ms;
+}
+
