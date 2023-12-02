@@ -91,7 +91,7 @@ main h1 {
     padding: 10px 10px;
     /* border: solid 1px #ccc; */
     border-radius: 15px;
-    background-color: #ddd;
+    background-color: #ededed;
     margin: 20px;
     width: calc((100% / 1 ) - 20px);
 }
@@ -99,6 +99,13 @@ main h1 {
 .items-cardapio p {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+}
+
+.items-cardapio:hover{
+    transform: scale(1.05);
+    /* para nao ter uma transição 100% seca */
+    transition: all linear 160ms;
+
 }
 
 /* formatação da aba mais pedidos */

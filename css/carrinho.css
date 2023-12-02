@@ -1,75 +1,70 @@
 @import url(main.css);
 
-*{
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-    user-select: none;
-    box-sizing: border-box;
+.carrinho {
+    margin-top: 30px;
+    text-align: center;
+    width: auto;
 }
 
-:root{
-    --cor-primaria: #9800ce;
-    --cor-secundaria: #2a2f43ea;
-    --cor-fundo:#f5f5f5
+.pedido {
+    display: flex;
+    /* com esse comando o "finalizar" nao fica tao extendido */
+    align-items: center;
+    /* justify-content: space-evenly; */
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 30px;
 }
 
-.conteudo-principal{
+.titulo-pedido, .valor-pedido{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.valor-pedido{
+    text-align: center;
+}
+
+.img-pedido img {
+    width: 150px; 
+    height: auto;
+}
+
+.detalhes-pedido{
+    display: flex;
+    flex-grow: 1;
+    margin-top: 10px;
+}
+
+/* espaçamento entre icones e quantidade de produtos */
+.detalhes-icone i,
+.detalhes-icone p {
+    margin: 0 5px;
+}
+
+.detalhes-icone i {
+    background-color: #ddd;
+    padding: 5px;
+    border-radius:5px;
+}
+
+.detalhes-icone{
     display: flex;
     justify-content: center;
-    align-items: center;
-    /* altura minima é 100% da minha tela */
-    min-height: 100vh;
-    background-color: var(--cor-primaria);
 }
 
-.carrinho{
-    width: 400px;
-    height: min-content;
-    background: var(--cor-fundo);
-    padding: 35px;
+.detalhes-finalizar{
+    margin-top: 10px;
 }
 
-.carrinho .cabecalho-carrinho{
-    display: flex;
-}
-
-.carrinho .cabecalho-carrinho button{
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    font-size: 2rem;
-    /* altura de linha */
-    line-height: 50%;
-    color: var(--cor-primaria);
-    background: #ddddde50;
-    border: 2px solid #ddddde;
-    border-radius: 8px;
-}
-
-.carrinho .cabecalho-carrinho button:hover{
+.finalizar{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    background-color: #C82727;
+    display: inline-block;
+    padding: 5px 70px;
+    border-radius: 12px;
     color: #fff;
-    background: var(--cor-primaria);
-    border-color: var(--cor-primaria)
-}
-
-.carrinho .cabecalho-carrinho h3{
-    /* deixando as margens do elemento automaticas, entao centralizara automaticamente */
-    margin: auto;
-    text-align: center;
-    font: 400 1.25rem 'Poppins';
-    color: var(--cor-primaria);
-}
-
-.carrinho .carrinho-item{
-    background-color: #fff;
-    position: relative;
-    /* vai pegar 1005 da largura do carrinho */
-    width: 100%;
-    margin: 30px 0;
-    border-radius:8px ;
-    /* 0 horizontal 4 na vertical e 18 de desfoque com a cor q eu escolhi */
-    box-shadow: 0 4px 18px #2a2f430f;
 }
 
