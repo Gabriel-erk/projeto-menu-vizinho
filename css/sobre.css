@@ -19,7 +19,7 @@
 
 
 .pergunta-resposta{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 p {
@@ -27,11 +27,15 @@ p {
     font-weight: 500; 
 }
 
+.texto{
+    padding-top:15px ;
+}
+
 .banner{
     margin-top: 10px;
 }
 
 .banner img{
-    height: 200px;
+    height: 400px;
     width: 100%;
 }
