@@ -73,3 +73,96 @@
     transition: all linear 160ms;
 }
 
+/* formatação da parte dos cupons */
+
+.caixa-compra{
+    margin-top: 40px;
+    padding-bottom: 30px;
+    border-top: 2px solid #EF1E1E;
+    border-bottom: 2px solid #EF1E1E;
+}
+
+.img-cupom img{
+    background-color: #d9d9d9;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+/* pedindo para a div ocupar apenas o espaço que necessita */
+.img-cupom{
+    display: inline-block;
+}
+
+.cupom-compra{
+    display: flex;
+    margin-top: 30px;
+    /* padding-right: 30px; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.cupom-compra p{
+    color: #9B9999;
+}
+
+.cupom-compra a{
+    color: #C90808;
+    font-weight: 700;
+}
+
+.cupom-compra a:hover{
+    cursor: pointer;
+}
+
+/* formatação do botao adicionar */
+
+.adicionar{
+    /* background-color: #C82727; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+/* formatação da parte que inclui os valores */
+
+.caixa-valores{
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.valores{
+    display: flex;
+}
+
+.texto-valores{
+    width: 50%;
+}
+
+.valores p{
+    color: #9B9999;
+}
+
+.botao-compra{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    /* background-color: #C82727; */
+    width: 50%;
+}
+
+.botao-compra div a{
+    background-color: #C82727;
+    display: inline-block;
+    padding: 5px 70px;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.botao-compra div a:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all linear 160ms;
+}
