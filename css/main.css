@@ -33,7 +33,7 @@
 
 .banner img {
     width: 100%;
-    height: 700px;
+    height: 800px;
     border-radius: 15px;
 }
 
@@ -105,7 +105,6 @@ main h1 {
     transform: scale(1.05);
     /* para nao ter uma transição 100% seca */
     transition: all linear 160ms;
-
 }
 
 /* formatação da aba mais pedidos */
