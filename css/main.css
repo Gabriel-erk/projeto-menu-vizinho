@@ -192,6 +192,11 @@ main h1 {
     text-align: center;
 }
 
+.rede-social a img:hover{
+    transform: scale(1.05);
+    transition: all linear 160ms;
+}
+
 .copy{
     margin-top: 40px;
     padding-bottom: 15px;
