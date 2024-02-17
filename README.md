@@ -6,7 +6,7 @@
 
 Projeto feito com intuito de simular uma lanchonete local, construido com HTML5 e CSS
 
-![Clique aqui para acessar](hhttps://gabriel-erk.github.io/projeto-menu-vizinho/index.html)
+![Clique aqui para acessar](https://gabriel-erk.github.io/projeto-menu-vizinho/)
 
 ## Tecnologias
 
