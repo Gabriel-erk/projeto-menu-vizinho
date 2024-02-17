@@ -1,0 +1,14 @@
+@import url(main.css);
+
+.container{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; ;
+}
+
+.politica-privacidade{
+    padding-top: 20px;
+}
+
+.topicos{
+    margin-bottom: 20px;
+}

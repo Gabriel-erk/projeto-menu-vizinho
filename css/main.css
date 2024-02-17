@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    text-decoration: none;
+    user-select: none;
+}
+
+/* formatação do cabeçalho */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* text-align: center;   */
+}
+
+#cabecalho {
+    background-color: #C82727;
+}
+
+#barra-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.icones i{
+    margin-right: 5px;
+}
+
+.banner img {
+    width: 100%;
+    height: 800px;
+    border-radius: 15px;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+}
+
+#menu ul li {
+    margin: 20px 20px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu a:hover {
+    color: yellow;
+    font-weight: 800;
+}
+
+/* formatação do body */
+
+/* formatação dos titulos */
+
+main h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    /* margin-top: 30px;
+    margin-bottom: 10px; */
+    background-color: #C82727;
+    display: inline-block;
+    padding: 5px 70px;
+    border-radius: 12px;
+    color: #fff;
+}
+
+.titulos{
+    text-align: center;
+     margin-top: 50px; 
+    margin-bottom: 40px;
+}
+
+/* formatação do cardapio */
+.cardapio {
+    display: flex;
+    justify-content: center;
+    /* margin: 20px 30px; */
+    text-align: center;
+    margin-top: 25px;
+}
+
+.items-cardapio {
+    padding: 10px 10px;
+    /* border: solid 1px #ccc; */
+    border-radius: 15px;
+    background-color: #ededed;
+    margin: 20px;
+    width: calc((100% / 1 ) - 20px);
+}
+
+.items-cardapio p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.items-cardapio:hover{
+    transform: scale(1.05);
+    /* para nao ter uma transição 100% seca */
+    transition: all linear 160ms;
+}
+
+/* formatação da aba mais pedidos */
+.lista-lanches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.lanches {
+    width: calc((100% / 3) - 30px);
+    border: solid 1px #ccc;
+    border-radius:15px ;
+     text-align: center; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.lanches img{
+    margin-top: 20px;
+}
+
+.lanches a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    background-color: #C82727;
+    border-radius: 30px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.texto-lanche{
+    padding-bottom: 40px;
+}
+
+.preco{
+    font-size: 14px;
+}
+
+/* formatção promoções */
+
+.promocoes{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* formatação rodape */
+
+#rodape{
+    background-color: #C82727;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-top: 80px;
+    color:#fff ;
+}
+
+.fonte-2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.coluna-rodape{
+    display: flex;
+    justify-content: space-between;
+    padding-top:20px ;
+    padding-bottom: 20px;
+}
+
+#rodape ul{
+    list-style: none;
+}
+
+.linha-rodape a{
+    color: #fff;
+}
+
+.linha-rodape a:hover{
+    font-weight: 500;
+}
+
+.rede-social{
+    text-align: center;
+}
+
+.rede-social a img:hover{
+    transform: scale(1.05);
+    transition: all linear 160ms;
+}
+
+.copy{
+    margin-top: 40px;
+    padding-bottom: 15px;
+    text-align: center;
+}
