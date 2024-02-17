@@ -39,3 +39,9 @@ p {
     height: 400px;
     width: 100%;
 }
+
+
+.rede-social a img:hover{
+    transform: scale(1.05);
+    transition: all linear 160ms;
+}
