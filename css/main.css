@@ -138,6 +138,10 @@ main h1 {
     padding-right: 75px;
 }
 
+.lanches a:hover{
+    color: yellow;
+}
+
 .texto-lanche{
     padding-bottom: 40px;
 }
