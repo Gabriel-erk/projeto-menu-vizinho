@@ -101,6 +101,11 @@ main h1 {
     font-weight: 400;
 }
 
+/* tirando formatação padrão azul do link */
+.items-cardapio a{
+    color: inherit; /* definindo que a cor do elemento tera cor do elemento pai */
+}
+
 .items-cardapio:hover{
     transform: scale(1.05);
     /* para nao ter uma transição 100% seca */
