@@ -162,6 +162,7 @@ main h1 {
 .promocoes{
     display: flex;
     justify-content: center;
+    padding-top: 30px;
     gap: 30px;
 }
 
