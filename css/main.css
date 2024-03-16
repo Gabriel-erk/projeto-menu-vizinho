@@ -27,8 +27,33 @@
     font-weight: 600;
 }
 
-.icones i{
+.icones i {
     margin-right: 5px;
+}
+
+/* definindo que, esta classe nao apareça na tela (pois seu valor ainda é zero, e nao quero que apareça o numero 0, quero q, apareça o valor somente quando tiver um valor maior que 0, para fazer isto usarei js) */
+.esconder {
+    display: none;
+}
+
+/* formatação do contador do carrinho */
+#contador-carrinho {
+    /* position: absolute, controla o posicionamento de um elemento com relaçao a caixa pai ou a janela do navegador (tem relaçao com a caixa pai caso ele tiver um position diferente de static, ou seja diferente do posicionamento padrão), para descobrir com maior facilidade, teste alterando top, bottom, e veja como se comporta */
+    position: absolute;
+    top: 10px;
+    /* Ajuste a posição vertical conforme necessário, quanto maior, mais pra baixo  */
+    right: 91px;
+
+    /* cores e tamanhos */
+    color: #000;
+    background-color: yellow;
+    width: 20px;
+    height: 20px;
+    font-size: 90%;
+    
+    /* Define um raio de 50%, transformando o elemento em uma bolinha */
+    border-radius: 50%;
+    text-align: center;
 }
 
 .banner img {
@@ -72,9 +97,9 @@ main h1 {
     color: #fff;
 }
 
-.titulos{
+.titulos {
     text-align: center;
-     margin-top: 50px; 
+    margin-top: 50px;
     margin-bottom: 40px;
 }
 
@@ -93,10 +118,10 @@ main h1 {
     border-radius: 15px;
     background-color: #ededed;
     margin: 20px;
-    width: calc((100% / 1 ) - 20px);
+    width: calc((100% / 1) - 20px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    
-    
+
+
 }
 
 .items-cardapio p {
@@ -105,11 +130,12 @@ main h1 {
 }
 
 /* tirando formatação padrão azul do link */
-.items-cardapio a{
-    color: inherit; /* definindo que a cor do elemento tera cor do elemento pai */
+.items-cardapio a {
+    color: inherit;
+    /* definindo que a cor do elemento tera cor do elemento pai */
 }
 
-.items-cardapio:hover{
+.items-cardapio:hover {
     transform: scale(1.05);
     /* para nao ter uma transição 100% seca */
     transition: all linear 160ms;
@@ -126,18 +152,18 @@ main h1 {
 .lanches {
     width: calc((100% / 3) - 30px);
     border: solid 1px #ccc;
-    border-radius:15px ;
-     text-align: center; 
+    border-radius: 15px;
+    text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.lanches img{
+.lanches img {
     margin-top: 20px;
 }
 
-.lanches a{
+.lanches a {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     color: #fff;
@@ -147,21 +173,21 @@ main h1 {
     padding-right: 75px;
 }
 
-.lanches a:hover{
+.lanches a:hover {
     color: yellow;
 }
 
-.texto-lanche{
+.texto-lanche {
     padding-bottom: 40px;
 }
 
-.preco{
+.preco {
     font-size: 14px;
 }
 
 /* formatção promoções */
 
-.promocoes{
+.promocoes {
     display: flex;
     justify-content: center;
     padding-top: 30px;
@@ -170,48 +196,48 @@ main h1 {
 
 /* formatação rodape */
 
-#rodape{
+#rodape {
     background-color: #C82727;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     margin-top: 80px;
-    color:#fff ;
+    color: #fff;
 }
 
-.fonte-2{
+.fonte-2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
 
-.coluna-rodape{
+.coluna-rodape {
     display: flex;
     justify-content: space-between;
-    padding-top:20px ;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
-#rodape ul{
+#rodape ul {
     list-style: none;
 }
 
-.linha-rodape a{
+.linha-rodape a {
     color: #fff;
 }
 
-.linha-rodape a:hover{
+.linha-rodape a:hover {
     font-weight: 500;
 }
 
-.rede-social{
+.rede-social {
     text-align: center;
 }
 
-.rede-social a img:hover{
+.rede-social a img:hover {
     transform: scale(1.05);
     transition: all linear 160ms;
 }
 
-.copy{
+.copy {
     margin-top: 40px;
     padding-bottom: 15px;
     text-align: center;

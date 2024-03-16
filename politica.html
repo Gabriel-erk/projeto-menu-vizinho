@@ -45,8 +45,9 @@
                         <i class="fa-solid fa-user" style="color: #ffffff;"></i>
                     </a>
 
-                    <a href="carrinho.html">
+                    <a href="carrinho.html" class="carrinho-icon">
                         <i class="fa-solid fa-cart-shopping" style="color: #fff;"></i>
+                        <span id="contador-carrinho" class="esconder">0</span>
                     </a>
                 </div>
             </div>
@@ -176,6 +177,40 @@
     <script src="js/owl.carousel.min.js"></script>
     <!-- linkando o arquivo javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+
+        let contadorCarrinho = document.getElementById('contador-carrinho');
+
+        let valorAtual = localStorage.getItem('contadorCarrinho');
+
+        if (valorAtual !== null) {
+            contadorCarrinho.textContent = valorAtual;
+        }
+
+        let botoesCompra = document.querySelectorAll('.texto-lanche a');
+
+        botoesCompra.forEach(function (botao) {
+            botao.addEventListener('click', function () {
+
+                let valorAtual = parseInt(contadorCarrinho.textContent);
+
+                valorAtual++
+
+                contadorCarrinho.textContent = valorAtual;
+
+                localStorage.setItem('contadorCarrinho', valorAtual);
+            });
+        });
+
+        window.addEventListener('load', function () {
+            let valorAtual = parseInt(contadorCarrinho.textContent);
+
+            if (valorAtual > 0) {
+                contadorCarrinho.classList.remove('esconder');
+            }
+        });
+    </script>
 </body>
 
 </html>
