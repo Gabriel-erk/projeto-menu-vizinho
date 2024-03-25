@@ -120,8 +120,6 @@ main h1 {
     margin: 20px;
     width: calc((100% / 1) - 20px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-
 }
 
 .items-cardapio p {
@@ -138,7 +136,8 @@ main h1 {
 .items-cardapio:hover {
     transform: scale(1.05);
     /* para nao ter uma transição 100% seca */
-    transition: all linear 160ms;
+    transition: all linear 200ms;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 /* formatação da aba mais pedidos */
@@ -157,6 +156,11 @@ main h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lanches:hover {
+    transform: all linear 50ms;
+    border: solid 1px #ededed;
 }
 
 .lanches img {
