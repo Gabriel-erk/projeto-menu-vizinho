@@ -120,6 +120,8 @@ main h1 {
     margin: 20px;
     width: calc((100% / 1) - 20px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* para quando remover o mouse do elemento, ainda ter uma pequena animação */
+    transition: transform 0.5s ease;
 }
 
 .items-cardapio p {
@@ -134,10 +136,10 @@ main h1 {
 }
 
 .items-cardapio:hover {
-    transform: scale(1.05);
+     transform: scale(1.05); 
     /* para nao ter uma transição 100% seca */
-    transition: all linear 200ms;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+     transition: all linear 200ms; 
+    box-shadow: 0 1px 6px #bebcbc;
 }
 
 /* formatação da aba mais pedidos */
