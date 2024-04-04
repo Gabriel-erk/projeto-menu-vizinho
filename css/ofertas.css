@@ -5,8 +5,8 @@
     background-color: #F2E5D4;
     border-radius: 15px;
     text-align: center;
-    align-items: center;
-    width: calc((100% / 3 ) - 40px);
+    /* align-items: center; */
+    width: calc((100% / 3 ) - 20px);
     transition: transform 0.5s ease;
 }
 
