@@ -1,7 +1,7 @@
 @import url(main.css);
 
 .listaCarrinho {
-    margin-bottom: 80px ;
+    margin-bottom: 80px;
 }
 
 .agrupaCarrinho img {
@@ -12,18 +12,19 @@
     padding: 10px;
 }
 
-.info-lanche, .quantidadeCarrinho {
+.info-lanche,
+.quantidadeCarrinho {
     font-family: 'Poppins', sans-serif;
 }
 
-.info-lanche h2{
+.info-lanche h2 {
     color: #EC3030;
     font-weight: 800;
 }
 
-.descricao{
-font-weight: 400;
-color: #979797;
+.descricao {
+    font-weight: 400;
+    color: #979797;
 }
 
 .valor {
@@ -42,50 +43,88 @@ color: #979797;
 }
 
 .quantidadeCarrinho {
-    
-    background-color: #D9D9D9;
+    width: 18%;
     margin-left: 320px;
-    padding: 3px 30px;
-    border-radius: 20px;
+}
+
+.iconeValorCarrinho {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 4px 5px;
+    background-color: #D9D9D9;
 }
 
 .aproveiteTambem {
     background-color: #EFEDED;
     border-radius: 1px solid #000;
     font-family: 'Poppins', sans-serif;
+    border-top: 2px solid #ccc ;
+}
+
+.aproveiteTambem h2 {
+    font-weight: 500;
+    padding-left: 15px;
+    padding-top: 10px;
 }
 
 .listaAproveiteTambem {
     display: flex;
     text-align: center;
- }
-
-.tituloAproveiteTambem{
-   background-color: #fff;
-   padding: 20px;
-   border-radius: 10px;
 }
 
-.tituloAproveiteTambem h3 {
+.tituloAproveiteTambem {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
     color: #EC3030;
+    font-weight: 700;
+    font-size: smaller;
+
 }
 
 .produtoListaAproveiteTambem {
     background-color: #FBE7CA;
     width: 250px;
-    height: 250px;
     border-radius: 15px;
     margin: 10px;
 }
 
 .produtoListaAproveiteTambem img {
-    height: 100px;
+    height: 130px;
+    margin-top: 10px;
 }
 
+.pagamento-e-cupom {
+    font-family: 'Poppins', sans-serif;
+    border-top: 2px solid #ccc;
+}
 
+.pagamento-e-cupom h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
+.pagamento {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
 
+.imgPagamentoCupom {
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
 
-
-
-
+.cupom {
+    display: flex;
+    align-items: center;
+}
