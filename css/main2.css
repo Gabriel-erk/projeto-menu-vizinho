@@ -103,7 +103,7 @@ body {
 
 .banner img {
     width: 100%;
-    height: 800px;
+    height: 600px;
     border-radius: 5px;
 }
 
@@ -152,8 +152,6 @@ body {
 .itemCardapio {
     font-family: 'Cabin', sans-serif;
     padding: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
     width: calc((100% / 1) - 20px);
 }
 
