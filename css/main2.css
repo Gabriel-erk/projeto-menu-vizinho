@@ -81,7 +81,7 @@ body {
     width: 20px;
 }
 
-.botaoLogin button {
+.botaoLogin {
     font-family: 'Cabin', sans-serif;
     font-weight: 600;
 
@@ -94,7 +94,7 @@ body {
     transition: transform 0.5s ease;
 }
 
-.botaoLogin button:hover {
+.botaoLogin:hover {
     transform: scale(1.05);
     transition: all linear 200ms;
 }
