@@ -81,10 +81,9 @@ body {
     width: 20px;
 }
 
-.botaoLogin {
+.iconeMenuLateral {
     font-family: 'Cabin', sans-serif;
-    font-weight: 600;
-
+    font-weight: 600;   
     padding: 10px 20px;
     margin: 5px;
     color: #fff;
@@ -94,9 +93,53 @@ body {
     transition: transform 0.5s ease;
 }
 
-.botaoLogin:hover {
+.iconeMenuLateral:hover {
     transform: scale(1.05);
     transition: all linear 200ms;
+}
+
+#menuLateral {
+    position: fixed;
+    top: 0;
+    /* left: -300px; */
+    right: 0px;
+    width: 500px;
+    height: 100%;
+    z-index: 9999;
+    background-color: #fff;
+    transition: left 0.3s ease;
+    /* margin-top: 89px; */
+}
+
+#menuLateral ul {
+    margin-top: 10px;
+}
+
+#menuLateral li {
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+    padding: 3px;
+}
+
+#menuLateral a {
+    text-decoration: none;
+    color: #000;
+    word-wrap: break-word;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 8px 5px;
+    margin-left: 10px;
+}
+
+#menuLateral i {
+    margin-left: 4px;
+}
+
+.iconeFechaMenu {
+    margin-left: 475px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* formatando banners */
@@ -261,7 +304,7 @@ body {
     margin-right: 100px;
 }
 
-.imgCliente img{
+.imgCliente img {
     background-color: #848384;
     width: 100px;
     border-radius: 50%;
@@ -328,13 +371,13 @@ body {
 
 .redesRestaurante {
     display: flex;
-    
+
 }
 
 .icone {
     display: flex;
     align-items: center;
-    background-color: #FFFFFF ;
+    background-color: #FFFFFF;
     border-radius: 50%;
     margin-right: 10px;
     margin-top: 15px;
