@@ -56,21 +56,50 @@ body {
 
 .buttonMenu {
     display: flex;
+    /* elementos filhos terao suas posições relativas a este elemento (elemento pai), e não ao viewport do navegador, serão posicionados dentro desta caixa */
+    position: relative;
 }
 
-/* .alinharBotoes {
+#contador-carrinho {
+    /* não vai afetar o layout de outros elementos
+    * será posicionado em relação ao elemento pai (buttonMenu) e não ao viewport do navegador
+    * se colocado left 0, top0, sera posicionado no canto superior esquerdo do elemento pai (buttonMenu)
+    */
+    position: absolute;
+    left: 35px;
+    top: -8px;
+    z-index: 999;
+}
+
+#contador-carrinho span {
+    /* para garantir que o width funcione */
+    display: inline-block; 
+    /* tamanho fixo, para não ficar variando dependendo do numero */
+    width: 23px;
+    /* alinhando horizontalmente e verticalmente */
+    text-align: center;
+    border-radius: 50%;
+    padding: 2px 0px;
+    
+    color: #2767C8;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.alinharBotoes {
     display: flex;
     align-items: center;
-} */
+}
 
 .agrupaCarrinho {
     background-color: #2767C8;
     border-radius: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 5px;
     margin: 5px;
     transition: transform 0.5s ease;
-    position: relative;
 }
 
 .agrupaCarrinho:hover {
@@ -78,16 +107,9 @@ body {
     transition: all linear 200ms;
 }
 
-.agrupaCarrinho img {
-    width: 20px;
-    
-}
-
-#contador-carrinho {
-    position: absolute;
-    right: 3px;
-    
-}
+/* .agrupaCarrinho img {
+    width: 20px;  
+} */
 
 .iconeMenuLateral {
     font-family: 'Cabin', sans-serif;
