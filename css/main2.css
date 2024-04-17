@@ -101,7 +101,7 @@ body {
 #menuLateral {
     position: fixed;
     top: 0;
-    /* left: -300px; */
+     left: -500px; 
     right: 0px;
     width: 500px;
     height: 100%;
@@ -118,10 +118,10 @@ body {
 #menuLateral li {
     list-style: none;
     border-bottom: 1px solid #ccc;
-    padding: 3px;
+    padding: 10px;
 }
 
-#menuLateral a {
+#menuLateral ul a {
     text-decoration: none;
     color: #000;
     word-wrap: break-word;
@@ -130,6 +130,10 @@ body {
     font-size: 15px;
     padding: 8px 5px;
     margin-left: 10px;
+}
+
+#menuLateral ul a:hover {
+    color: #2767C8;
 }
 
 #menuLateral i {
@@ -142,6 +146,24 @@ body {
     padding-bottom: 10px;
 }
 
+.botaoLoginCadastro {
+    text-align: center;
+}
+
+.botaoLoginCadastro button {
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #2767C8;
+    border: none;
+    border-radius: 5px;
+}
+
+.botaoLoginCadastro a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
 /* formatando banners */
 
 .banner img {
