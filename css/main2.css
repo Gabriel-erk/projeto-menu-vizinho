@@ -58,10 +58,10 @@ body {
     display: flex;
 }
 
-.alinharBotoes {
+/* .alinharBotoes {
     display: flex;
     align-items: center;
-}
+} */
 
 .agrupaCarrinho {
     background-color: #2767C8;
@@ -70,6 +70,7 @@ body {
     padding-right: 10px;
     margin: 5px;
     transition: transform 0.5s ease;
+    position: relative;
 }
 
 .agrupaCarrinho:hover {
@@ -79,6 +80,13 @@ body {
 
 .agrupaCarrinho img {
     width: 20px;
+    
+}
+
+#contador-carrinho {
+    position: absolute;
+    right: 3px;
+    
 }
 
 .iconeMenuLateral {
@@ -101,13 +109,13 @@ body {
 #menuLateral {
     position: fixed;
     top: 0;
-     left: -500px; 
-    right: 0px;
+    right: -500px; 
     width: 500px;
     height: 100%;
     z-index: 999;
     background-color: #fff;
-    transition: left 0.3s ease;
+    transition: right 0.5s ease;
+    box-shadow: 0 1px 5px #bebcbc;
     /* margin-top: 89px; */
 }
 
@@ -141,9 +149,13 @@ body {
 }
 
 .iconeFechaMenu {
-    margin-left: 475px;
+    margin-left: 470px;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-size: 25px;
+}
+.iconeFechaMenu:hover {
+    cursor: pointer;
 }
 
 .botaoLoginCadastro {
@@ -156,6 +168,12 @@ body {
     background-color: #2767C8;
     border: none;
     border-radius: 5px;
+    transition: transform 0.5s ease;
+}
+
+.botaoLoginCadastro button:hover {
+    transform: scale(1.02);
+    transition: all linear 200ms;
 }
 
 .botaoLoginCadastro a {

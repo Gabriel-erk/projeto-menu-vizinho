@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuLateral = document.getElementById("menuLateral");
 
   iconeMenu.addEventListener('click', function() {
-    menuLateral.style.left = '0px';
+    menuLateral.style.right = '0px';
   })
 
   fecharMenu.addEventListener('click', function() {
-    menuLateral.style.left = '-500px';
+    menuLateral.style.right = '-500px';
   })
 
   
