@@ -29,3 +29,30 @@ document.addEventListener("DOMContentLoaded", function () {
   })
 
 });
+
+// carrosel carrinho
+
+$('.carroselCarrinho').owlCarousel({
+  // definindo que é um loop
+  loop:true,
+  margin:10,
+  // definindo para setas de navegação  naoaparecerem (neste caso, apenas bolinhas)
+  nav:false,
+  // dizendo que ira dar play automaticamente
+  autoplay:true,
+  // dizendo o tempo que ira passar cada slide
+  autoplayTimeout:5000,
+  // dizendo para nao parar quando passar o mouse em cima
+  autoplayHoverPause:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:5
+      }
+  }
+})

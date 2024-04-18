@@ -1,0 +1,124 @@
+@import url(main2.css);
+
+body {
+    background-color: #F3F3F3;
+}
+
+.listaCarrinho {
+    /* margin-bottom: 80px; */
+    background-color: #F9EED9;
+}
+
+.agrupaItemCarrinho {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.agrupaItemCarrinho img {
+    height: 280px;
+    width: 350px;
+    border-radius: 40px;
+}
+
+.quantidadeCarrinho {
+    width: 30%;
+}
+
+.iconeValorCarrinho {
+    margin-left: 280px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    padding: 4px 8px;
+    background-color: #D9D9D9;
+}
+
+.fa-solid:hover {
+    cursor: pointer;
+}
+
+.quantidadeCarrinho {
+    font-family: 'Poppins', sans-serif;
+}
+
+.info-lanche {
+    padding-left: 15px;
+}
+
+.info-lanche h2 {
+    color: #8C6342;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.descricao {
+    font-family: "Signika Negative", sans-serif;
+    font-weight: 400;
+    color: #979797;
+}
+
+.valor {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.aproveiteTambem {
+    /* border-radius: 1px solid #000; */
+    border-top: 2px solid #ccc ;
+    border-bottom: 2px solid #ccc ;
+}
+
+.aproveiteTambem h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.listaAproveiteTambem {
+    display: flex;
+    text-align: center;
+}
+
+.produtoListaAproveiteTambem {
+    border: solid 1px #ccc;
+    background-color: #fff;
+    border-radius: 15px;
+    font-family: 'Cabin', sans-serif;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+   
+}
+
+.tituloAproveiteTambem {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    padding: 10px 5px;
+    border-radius: 5px;
+    color: #8C6342;
+    /* font-size: smaller; */
+}
+
+.imgProdutoAproveiteTambem {
+    background-color: #E7E7E7;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.imgProdutoAproveiteTambem img {
+    height: 130px;
+    margin-top: 10px;
+}
+
+
+
