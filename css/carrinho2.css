@@ -12,7 +12,7 @@ body {
 .agrupaItemCarrinho {
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 
 .agrupaItemCarrinho img {
@@ -69,8 +69,8 @@ body {
 
 .aproveiteTambem {
     /* border-radius: 1px solid #000; */
-    border-top: 2px solid #ccc ;
-    border-bottom: 2px solid #ccc ;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
 }
 
 .aproveiteTambem h2 {
@@ -82,43 +82,166 @@ body {
 
 .listaAproveiteTambem {
     display: flex;
-    text-align: center;
+
+    /* text-align: center; */
 }
 
 .produtoListaAproveiteTambem {
-    border: solid 1px #ccc;
     background-color: #fff;
-    border-radius: 15px;
-    font-family: 'Cabin', sans-serif;
-    width: 200px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-   
-}
-
-.tituloAproveiteTambem {
-    font-family: 'Cabin', sans-serif;
-    font-weight: 400;
-    padding: 10px 5px;
+    border: solid 1px #ccc;
     border-radius: 5px;
-    color: #8C6342;
-    /* font-size: smaller; */
+    font-family: 'Cabin', sans-serif;
+    padding: 15px;
+    height: 340px;
+    width: 300px;
+
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .imgProdutoAproveiteTambem {
     background-color: #E7E7E7;
     text-align: center;
     border-radius: 5px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .imgProdutoAproveiteTambem img {
-    height: 130px;
-    margin-top: 10px;
+    width: 300px;
+    /* height: 170px; */
+    padding-right: 30px;
+    /* margin-top: 10px; */
 }
 
+.iconeMaisAproveiteTambem {
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    background-color: #000;
+}
 
+.tituloValorAproveiteTambem {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
 
+.tituloValorAproveiteTambem h3 {
+    font-size: 17px;
+}
+
+.tituloValorAproveiteTambem p {
+    font-size: 14px;
+}
+
+.descricaoProdutoAproveiteTambem p {
+    width: 210px;
+    word-wrap: break-word;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* .container2 {
+    margin: 20px 30px;
+   
+} */
+
+.pagamento-e-cupom {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 30px;
+    border-bottom: 2px solid #ccc;
+}
+
+.pagamento-e-cupom h3 {
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+}
+
+.pagamento-e-cupom a {
+    color: #EC3030;
+    font-weight: 700;
+}
+
+.pagamento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.img-texto-pagamento {
+    display: flex;
+}
+
+.textoPagamento p {
+    color: #9B9999;
+    font-weight: 600;
+}
+
+.imgPagamentoCupom {
+
+    width: 70px;
+    /* height: 60px; */
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    text-align: center;
+
+    margin-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.imgPagamentoCupom img {
+    height: 45px;
+}
+
+.cupom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.pagamentoCarrinho {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding: 20px 30px;
+}
+
+.valoresCarrinho {
+    margin-bottom: 100px;
+}
+
+.valoresCarrinho p {
+    color: #9B9999;
+}
+
+.finaliza {
+    text-align: center;
+   margin-bottom: 80px;
+
+}
+
+.finaliza h1 {
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: #EC3030;
+    border-radius: 10px;
+    padding: 10px 50px;
+
+    transition: transform 0.5s ease;
+}
+
+.finaliza h1:hover {
+    transform: scale(1.05);
+    transition: all linear 200ms;
+}
+
+#rodape {
+    margin-top: 0px;
+}
