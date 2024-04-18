@@ -132,4 +132,15 @@ body {
     border: none;
     border-radius: 10px;
     padding: 10px 60px;
+
+    transition: transform 0.5s ease;
+}
+
+.botaoAddCartTelaProduto:hover {
+    transform: scale(1.05);
+    transition: all linear 200ms;
+}
+
+.fa-solid:hover {
+    cursor: pointer;
 }
