@@ -13,6 +13,7 @@ $(".owl-carousel").owlCarousel({
   },
 });
 
+
 // definindo funcionalidade da barra lateral (menu-lateral), deixando-o funcional
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -30,29 +31,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-// carrosel carrinho
+// carrosel 2, carrinho
 
-$('.carroselCarrinho').owlCarousel({
-  // definindo que é um loop
-  loop:true,
-  margin:10,
-  // definindo para setas de navegação  naoaparecerem (neste caso, apenas bolinhas)
-  nav:false,
-  // dizendo que ira dar play automaticamente
-  autoplay:true,
-  // dizendo o tempo que ira passar cada slide
-  autoplayTimeout:5000,
-  // dizendo para nao parar quando passar o mouse em cima
-  autoplayHoverPause:true,
-  responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:1
-      },
-      1000:{
-          items:5
-      }
-  }
-})
+$(".owl-carousel-second").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true, // Ativar a navegação anterior/próxima
+  dots: false,
+  autoplay: false, // Desativar o autoplay para que os usuários possam controlar manualmente
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 2,
+    },
+    1000: {
+      items: 4,
+    },
+  },
+});
