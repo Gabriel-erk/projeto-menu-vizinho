@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
   })
 
   fecharMenu.addEventListener('click', function() {
-    menuLateral.style.right = '-500px';
+    menuLateral.style.right = '-550px';
   })
 
 });
