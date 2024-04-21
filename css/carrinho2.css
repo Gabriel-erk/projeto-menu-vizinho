@@ -4,6 +4,30 @@ body {
     background-color: #F3F3F3;
 }
 
+#limpaCarrinho {
+    font-family: 'Cabin', sans-serif;
+    background-color: #8C6342;
+    color: #fff;
+   
+    border: none;
+    border-radius: 10px;
+
+    padding: 10px 30px;
+    margin-top: 8px;
+    position: absolute;
+    right: 35px;
+
+    transition: transform 0.5s ease;
+}
+
+#limpaCarrinho:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all linear 200ms;
+
+    color: #F9EED9;
+}
+
 .listaCarrinho {
     /* margin-bottom: 80px; */
     background-color: #F9EED9;
@@ -102,25 +126,30 @@ body {
 }
 
 .imgProdutoAproveiteTambem {
+    position: relative;
+
     background-color: #E7E7E7;
     text-align: center;
     border-radius: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
 
 .imgProdutoAproveiteTambem img {
     width: 300px;
     /* height: 170px; */
     padding-right: 30px;
-    /* margin-top: 10px; */
 }
 
 .iconeMaisAproveiteTambem {
-    position: fixed;
-    z-index: 999;
+    /* icone não estava aparecendo sob a img, corrigi deicando sua posição absoluta em relação ao elemento pai (elemento pai com position relative)
+    * icone não estava aparecendo pois estava sendo posicionado em relação a janela do navegador, utilizando essa "combinação" de comandos, faço com que ele seja posicionao em relação ao conteiner mais proximo com a sua posição definida (posição definida = com seu position diferente do position padrão, neste caso: caixa pai com position: relative) */
+    position: absolute;
+    bottom: 30px; 
+    right: 20px; 
+    
+    /* z-index: 999; */
+    padding: 8px 12px;
     border-radius: 50%;
-    background-color: #000;
+    background-color: #8C6342;
 }
 
 .tituloValorAproveiteTambem {
