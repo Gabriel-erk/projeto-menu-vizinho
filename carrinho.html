@@ -116,11 +116,11 @@
     </header>
 
     <main>
-       
+
         <div class="listaCarrinho">
 
             <button id="limpaCarrinho">Limpar</button>
-            
+
             <div class="agrupaItemCarrinho">
                 <img src="./img/cheeseburguer.png">
 
@@ -250,24 +250,6 @@
 
                 </div>
 
-                <!-- <div class="produtoListaAproveiteTambem">
-                    <div class="imgProdutoAproveiteTambem">
-                        <img src="./img/duplo-cheddar.png">
-
-                        
-                    </div>
-                    <div class="informacoesProdutoAproveiteTambem">
-                        <div class="tituloValorAproveiteTambem">
-                            <h3>Combo Mrs.Duplo Cheddar</h3>
-                            <p>$15.90</p>
-                        </div>
-                        <div class="descricaoProdutoAproveiteTambem">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec velit eu ligula
-                                vestibulum ullamcorper vel eget libero.</p>
-                        </div>
-                    </div>
-                </div> -->
-
             </div>
         </div>
 
@@ -289,9 +271,77 @@
 
                 </div>
 
-                <div class="botaoAlterar">
-                    <a href="#">Alterar</a>
+
+                <div class="agrupaBotaoAlterar">
+
+                    <div id="pagamento" class="telaPagamento">
+
+                        <i id="fechar-mini-tela" class="fa-solid fa-times"></i>
+            
+                        <div id="metodo-pagamento">
+                            <div class="formaPagamento">
+            
+                                <div class="imgTituloFormaPagamento">
+                                    <img src="./img/credit-card.png">
+                                    <p>PIX</p>
+                                </div>
+            
+                            </div>
+            
+                            <div class="formaPagamento">
+            
+                                <div class="imgTituloFormaPagamento">
+                                    <img src="./img/credit-card.png">
+                                    <p>Cartão de crédito</p>
+                                </div>
+            
+                                <p><a href="#">Adicionar</a></p>
+                            </div>
+            
+                            <div class="formaPagamento">
+            
+                                <div class="imgTituloFormaPagamento">
+                                    <img src="./img/credit-card.png">
+                                    <p>Cartão de débito</p>
+                                </div>
+            
+                                <p><a href="#">Adicionar</a></p>
+                            </div>
+            
+                        </div>
+            
+                        <div id="pagamentoSalvo">
+                            <h3>Cartões Salvos</h3>
+            
+                            <div class="formaPagamento">
+            
+                                <div class="imgTituloFormaPagamento">
+                                    <img src="./img/bandeiraCartao.png">
+                                    <p class="nomeCartao">Mastercard ****5090</p>
+                                </div>
+            
+                                <p><a href="#">Apagar</a></p>
+                            </div>
+            
+                            <div class="formaPagamento">
+            
+                                <div class="imgTituloFormaPagamento">
+                                    <img src="./img/bandeiraCartao.png">
+                                    <p class="nomeCartao">Mastercard ****5090</p>
+                                </div>
+            
+                                <p><a href="#">Apagar</a></p>
+                            </div>
+                        </div>
+            
+                    </div>
+
+                    <div class="botaoAlterar">
+                        <a href="#" id="botaoAlterar">Alterar</a>
+                    </div>
                 </div>
+
+
             </div>
 
             <div class="cupom">
@@ -329,6 +379,7 @@
             </div>
 
         </div>
+
     </main>
 
     <footer id="rodape">
@@ -393,6 +444,37 @@
 
         </div>
     </footer>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const botaoAlterar = document.getElementById('botaoAlterar');
+            const miniTelaPagamento = document.getElementById('pagamento');
+            const fecharMiniTela = document.getElementById('fechar-mini-tela');
+
+            botaoAlterar.addEventListener("click", function () {
+                let botaoPosition = botaoAlterar.getBoundingClientRect() // pegando posição e tamanho do botao "alterar", para posicionar elemento acima dele
+
+                // Exiba as coordenadas do botão "Alterar" no console
+                console.log("Posição do botão Alterar:");
+                console.log("Topo: " + botaoPosition.top);
+                console.log("Esquerda: " + botaoPosition.left);
+                console.log("Direita: " + botaoPosition.right);
+                console.log("Inferior: " + botaoPosition.bottom);
+                console.log("Largura: " + botaoPosition.width);
+                console.log("Altura: " + botaoPosition.height);
+
+                // miniTelaPagamento.style.left = botaoPosition.left + "px";
+                miniTelaPagamento.style.top = (botaoPosition.top - miniTelaPagamento.offsetHeight) + "px";
+
+                miniTelaPagamento.style.display = "block"
+            })
+
+
+        })
+
+
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>

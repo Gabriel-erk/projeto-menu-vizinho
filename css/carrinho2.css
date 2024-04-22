@@ -271,6 +271,80 @@ body {
     transition: all linear 200ms;
 }
 
+/* formatando mini telas, de cupom e forma de pagamento */
+
+.agrupaBotaoAlterar {
+    position: relative;
+}
+
+#pagamento {
+
+    position: fixed;
+    z-index: 999;
+
+    width: 40%;
+    height: 600px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+
+    background-color: #fff;
+    /* position: sticky; */
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    border-radius: 10px;
+}
+
+#pagamento a {
+    color: #EC3030;
+    font-size: small;
+}
+
+#pagamento img {
+    width: 50px;
+}
+
+#fechar-mini-tela {
+    margin-left: 510px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.formaPagamento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 10px;
+    padding: 15px 10px;
+    width: 520px;
+    height: 90px;
+
+    background-color: #F4F4F4;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.imgTituloFormaPagamento {
+    display: flex;
+    align-items: center;
+}
+
+.imgTituloFormaPagamento p {
+    margin-left: 5px;
+}
+
+#pagamentoSalvo h3 {
+    margin-left: 15px;
+    color: #B5B1B1;
+}
+
+.nomeCartao {
+    font-size: 12px;
+}
+
 #rodape {
     margin-top: 0px;
 }
