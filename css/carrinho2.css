@@ -273,13 +273,9 @@ body {
 
 /* formatando mini telas, de cupom e forma de pagamento */
 
-.agrupaBotaoAlterar {
-    position: relative;
-}
-
 #pagamento {
 
-    position: fixed;
+    /* position: fixed; */
     z-index: 999;
 
     width: 40%;
@@ -288,7 +284,6 @@ body {
     font-weight: 700;
 
     background-color: #fff;
-    /* position: sticky; */
 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
