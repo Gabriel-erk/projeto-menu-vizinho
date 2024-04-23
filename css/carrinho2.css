@@ -275,14 +275,14 @@ main {
     transition: all linear 200ms;
 }
 
-/* formatando mini telas, de cupom e forma de pagamento */
+/* formatando mini telas (tela de pagamento) */
 
 #pagamento {
 
     display: none;
     position: absolute;
-    bottom: 555px;
-    right: 20px;
+    /* bottom: 900px;
+    right: 20px; */
 
     z-index: 999;
 
@@ -346,6 +346,94 @@ main {
 
 .nomeCartao {
     font-size: 12px;
+}
+
+/* formatando mini telas (tela de cupom) */
+
+#cupom-disponivel {
+    width: 55%;
+    height: 400px;
+    background-color: yellow;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* padding: 30px; */
+}
+
+#fechar-mini-tela2 {
+    margin-left: 715px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.cuponsDisponiveis {
+    background-color: #F5F5F5;
+    
+    margin-top: 20px;
+    padding: 10px 20px;
+    
+    border: 1px solid #ccc;
+
+    /* border-radius: 10px; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lanchesDisponiveis {
+    text-align: center;
+}
+
+.agrupaCupom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoCupom {
+    display: flex;
+}
+
+.infoCupom img {
+    width: 50px;
+}
+
+.infoCupom h2 {
+    font-weight: 600;
+}
+
+.infoCupom p {
+    color: #929090;
+}
+
+.desc-cupom {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10px;
+}
+
+.desc-cupom h2 {
+    font-size: 18px;
+}
+
+.desc-cupom p {
+    font-size: 14px;
+}
+
+.imgCupom2 img{
+    margin-top: 15px;
+    width: 30px;
+}
+
+.lanchesDisponiveis {
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-weight: 600;
+    color: #8C6342;
+    background-color: #fff;
+    border: 1px solid #8C6342;
+
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.lanchesDisponiveis:hover {
+    color: #fff;
+    background-color: #8C6342;
 }
 
 #rodape {
