@@ -448,21 +448,17 @@
             const fecharMiniTela = document.getElementById('fechar-mini-tela');
 
             botaoAlterar.addEventListener("click", function () {
-                let botaoPosition = botaoAlterar.getBoundingClientRect() // pegando posição e tamanho do botao "alterar", para posicionar elemento acima dele
-
-                // Exiba as coordenadas do botão "Alterar" no console
-                console.log("Posição do botão Alterar:");
-                console.log("Topo: " + botaoPosition.top);
-                console.log("Esquerda: " + botaoPosition.left);
-                console.log("Direita: " + botaoPosition.right);
-                console.log("Inferior: " + botaoPosition.bottom);
-                console.log("Largura: " + botaoPosition.width);
-                console.log("Altura: " + botaoPosition.height);
-
-                // miniTelaPagamento.style.left = botaoPosition.left + "px";
-                miniTelaPagamento.style.top = (botaoPosition.top - miniTelaPagamento.offsetHeight) + "px";
+                // remove o comportamento padrão do link (no momento,estava redirecionando para o topo da tela ao clicar no botão(estava utilizando # no href))
+                event.preventDefault();
+                
+                miniTelaPagamento.style.bottom = '555px';
+                miniTelaPagamento.style.right = '20px';
 
                 miniTelaPagamento.style.display = "block"
+            })
+
+            fecharMiniTela.addEventListener('click', function() {
+                miniTelaPagamento.style.display = 'none';
             })
 
         })

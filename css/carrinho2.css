@@ -4,6 +4,10 @@ body {
     background-color: #F3F3F3;
 }
 
+main {
+    position: relative;
+}
+
 #limpaCarrinho {
     font-family: 'Cabin', sans-serif;
     background-color: #8C6342;
@@ -275,7 +279,11 @@ body {
 
 #pagamento {
 
-    /* position: fixed; */
+    display: none;
+    position: absolute;
+    bottom: 555px;
+    right: 20px;
+
     z-index: 999;
 
     width: 40%;
