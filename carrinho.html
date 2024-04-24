@@ -360,7 +360,7 @@
                 </div>
 
                 <div class="botaoAlterar">
-                    <a href="#">Adicionar</a>
+                    <a href="#" id="botaoAdicionar">Adicionar</a>
                 </div>
 
             </div>
@@ -566,7 +566,10 @@
 
     <script>
 
+
         document.addEventListener("DOMContentLoaded", function () {
+
+            // Script da mini-tela de formas de pagamento
             const botaoAlterar = document.getElementById('botaoAlterar');
             const miniTelaPagamento = document.getElementById('pagamento');
             const fecharMiniTela = document.getElementById('fechar-mini-tela');
@@ -576,8 +579,8 @@
                 // remove o comportamento padrão do link (no momento,estava redirecionando para o topo da tela ao clicar no botão(estava utilizando # no href))
                 event.preventDefault();
 
-                miniTelaPagamento.style.bottom = '900px';
-                miniTelaPagamento.style.right = '20px';
+                miniTelaPagamento.style.bottom = '550px';
+                miniTelaPagamento.style.right = '25px';
 
                 miniTelaPagamento.style.display = "block"
             })
@@ -586,7 +589,26 @@
                 miniTelaPagamento.style.display = 'none';
             })
 
+            // Script da mini-tela de cupom
+            const botaoAdicionar = document.getElementById('botaoAdicionar');
+            let miniTelaCupom = document.getElementById('cupom-disponivel');
+            const fecharMiniTela2 = document.getElementById('fechar-mini-tela2');
+
+            botaoAdicionar.addEventListener('click', function() {
+                event.preventDefault();
+
+                miniTelaCupom.style.bottom = '475px';
+                miniTelaCupom.style.right = '25px';
+
+                miniTelaCupom.style.display = 'block';
+            })
+
+            fecharMiniTela2.addEventListener('click', function() {
+                miniTelaCupom.style.display = 'none'
+            })
+
         })
+
 
 
     </script>

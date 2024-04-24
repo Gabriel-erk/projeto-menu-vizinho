@@ -351,16 +351,21 @@ main {
 /* formatando mini telas (tela de cupom) */
 
 #cupom-disponivel {
-    width: 55%;
+    width: 40%;
     height: 400px;
-    background-color: yellow;
+    background-color: #EEEEEE;
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* padding: 30px; */
+
+    position: absolute;
+    /* bottom: 475px; */
+    /* right: 25px; */
+    display: none;
+    /* z-index: 1000; */
 }
 
 #fechar-mini-tela2 {
-    margin-left: 715px;
+    margin-left: 510px;
     margin-top: 10px;
     font-size: 20px;
 }
@@ -371,10 +376,10 @@ main {
     margin-top: 20px;
     padding: 10px 20px;
     
-    border: 1px solid #ccc;
+    border: 1px solid #D9D9D9;
 
     /* border-radius: 10px; */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px #ededed;
 }
 
 .lanchesDisponiveis {
@@ -383,6 +388,7 @@ main {
 
 .agrupaCupom {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
