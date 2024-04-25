@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   iconeMenu.addEventListener('click', function() {
     menuLateral.style.right = '0px';
+    // menuLateral.style.display = 'block';
   })
 
   fecharMenu.addEventListener('click', function() {

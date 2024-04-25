@@ -130,8 +130,9 @@ body {
 
 #menuLateral {
     position: fixed;
+    /* display: none; */
     top: 0;
-    right: -500px; 
+    right: -550px; 
     width: 500px;
     height: 100%;
     z-index: 999;
