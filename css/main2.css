@@ -125,6 +125,7 @@ body {
 
 .iconeMenuLateral:hover {
     transform: scale(1.05);
+    cursor: pointer;
     transition: all linear 200ms;
 }
 
@@ -261,6 +262,10 @@ body {
     font-family: 'Cabin', sans-serif;
     padding: 20px;
     width: calc((100% / 1) - 20px);
+}
+
+.itemCardapio:hover {
+    cursor: pointer;
 }
 
 .infoCardapio {
