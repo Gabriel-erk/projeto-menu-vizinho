@@ -317,6 +317,10 @@ body {
     /* width: calc((100% / 1) - 30px); */
 }
 
+.produto:hover {
+    border-color: #e9e2e2;
+}
+
 .imgProduto {
     background-color: #E7E7E7;
     text-align: center;
@@ -404,15 +408,21 @@ body {
     background-color: #000;
     font-family: 'Poppins', sans-serif;
     color: #848384;
+    padding-bottom: 70px;
     margin-top: 90px;
    
+}
+
+.agrupaRodape {
+    height: 80%;
+    padding-bottom: 140px;
+    border-bottom: 2px solid #333232;
 }
 
 .colunaRodape {
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
-    padding-bottom: 100px;
 }
 
 .infoRestaurante {
