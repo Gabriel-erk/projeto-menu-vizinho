@@ -184,7 +184,7 @@
             <h2>Aproveite Também</h2>
             <div class="listaAproveiteTambem owl-carousel">
 
-                <div class="produtoListaAproveiteTambem item"> 
+                <div class="produtoListaAproveiteTambem item">
                     <div class="imgProdutoAproveiteTambem">
                         <img src="./img/duplo-cheddar.png">
                         <div class="iconeMaisAproveiteTambem">
@@ -269,7 +269,7 @@
 
                 </div>
 
-                <div class="produtoListaAproveiteTambem"> 
+                <div class="produtoListaAproveiteTambem">
                     <div class="imgProdutoAproveiteTambem">
                         <img src="./img/duplo-cheddar.png">
                         <div class="iconeMaisAproveiteTambem">
@@ -289,7 +289,7 @@
                     </div>
                 </div>
 
-                <div class="produtoListaAproveiteTambem"> 
+                <div class="produtoListaAproveiteTambem">
                     <div class="imgProdutoAproveiteTambem">
                         <img src="./img/duplo-cheddar.png">
                         <div class="iconeMaisAproveiteTambem">
@@ -309,7 +309,7 @@
                     </div>
                 </div>
 
-                <div class="produtoListaAproveiteTambem"> 
+                <div class="produtoListaAproveiteTambem">
                     <div class="imgProdutoAproveiteTambem">
                         <img src="./img/duplo-cheddar.png">
                         <div class="iconeMaisAproveiteTambem">
@@ -329,7 +329,7 @@
                     </div>
                 </div>
 
-                
+
 
             </div>
         </div>
@@ -356,6 +356,74 @@
 
 
                     <a href="#" id="botaoAlterar">Alterar</a>
+                </div>
+
+                <!-- mini-tela pagamento -->
+
+                <div id="pagamento" class="telaPagamento">
+
+                    <div class="fundoMiniTelaPagamento">
+                        <i id="fechar-mini-tela" class="fa-solid fa-times"></i>
+
+                        <div id="metodo-pagamento">
+                            <div class="formaPagamento">
+
+                                <div class="imgTituloFormaPagamento">
+                                    <img src="./img/pix-img.png">
+                                    <p>PIX</p>
+                                </div>
+
+                            </div>
+
+                            <div class="formaPagamento">
+
+                                <div class="imgTituloFormaPagamento">
+                                    <img src="./img/credit-card.png">
+                                    <p>Cartão de crédito</p>
+                                </div>
+
+                                <p><a href="#">Adicionar</a></p>
+                            </div>
+
+                            <div class="formaPagamento">
+
+                                <div class="imgTituloFormaPagamento">
+                                    <img src="./img/credit-card.png">
+                                    <p>Cartão de débito</p>
+                                </div>
+
+                                <p><a href="#">Adicionar</a></p>
+                            </div>
+
+                        </div>
+
+                        <div id="pagamentoSalvo">
+                            <h3>Cartões Salvos</h3>
+
+                            <div class="formaPagamento">
+
+                                <div class="imgTituloFormaPagamento">
+                                    <img src="./img/bandeiraCartao.png">
+                                    <p class="nomeCartao">Mastercard ****5090</p>
+                                </div>
+
+                                <p><a href="#">Apagar</a></p>
+                            </div>
+
+                            <div class="formaPagamento">
+
+                                <div class="imgTituloFormaPagamento">
+                                    <img src="./img/bandeiraCartao.png">
+                                    <p class="nomeCartao">Mastercard ****5090</p>
+                                </div>
+
+                                <p><a href="#">Apagar</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
                 </div>
 
             </div>
@@ -392,70 +460,6 @@
 
             <div class="finaliza">
                 <h1>Finalizar Compra</h1>
-            </div>
-
-        </div>
-
-        <!-- mini-tela pagamento -->
-
-        <div id="pagamento" class="telaPagamento">
-
-            <i id="fechar-mini-tela" class="fa-solid fa-times"></i>
-
-            <div id="metodo-pagamento">
-                <div class="formaPagamento">
-
-                    <div class="imgTituloFormaPagamento">
-                        <img src="./img/pix-img.png">
-                        <p>PIX</p>
-                    </div>
-
-                </div>
-
-                <div class="formaPagamento">
-
-                    <div class="imgTituloFormaPagamento">
-                        <img src="./img/credit-card.png">
-                        <p>Cartão de crédito</p>
-                    </div>
-
-                    <p><a href="#">Adicionar</a></p>
-                </div>
-
-                <div class="formaPagamento">
-
-                    <div class="imgTituloFormaPagamento">
-                        <img src="./img/credit-card.png">
-                        <p>Cartão de débito</p>
-                    </div>
-
-                    <p><a href="#">Adicionar</a></p>
-                </div>
-
-            </div>
-
-            <div id="pagamentoSalvo">
-                <h3>Cartões Salvos</h3>
-
-                <div class="formaPagamento">
-
-                    <div class="imgTituloFormaPagamento">
-                        <img src="./img/bandeiraCartao.png">
-                        <p class="nomeCartao">Mastercard ****5090</p>
-                    </div>
-
-                    <p><a href="#">Apagar</a></p>
-                </div>
-
-                <div class="formaPagamento">
-
-                    <div class="imgTituloFormaPagamento">
-                        <img src="./img/bandeiraCartao.png">
-                        <p class="nomeCartao">Mastercard ****5090</p>
-                    </div>
-
-                    <p><a href="#">Apagar</a></p>
-                </div>
             </div>
 
         </div>
@@ -589,24 +593,27 @@
         document.addEventListener("DOMContentLoaded", function () {
 
             // Script da mini-tela de formas de pagamento
+            // botao que abre a tela 
             const botaoAlterar = document.getElementById('botaoAlterar');
+            // tela pagamento
             const miniTelaPagamento = document.getElementById('pagamento');
+            // botao que fecha a tela
             const fecharMiniTela = document.getElementById('fechar-mini-tela');
 
-            botaoAlterar.addEventListener("click", function () {
-
-                // remove o comportamento padrão do link (no momento,estava redirecionando para o topo da tela ao clicar no botão(estava utilizando # no href))
+            botaoAlterar.onclick = function () {
                 event.preventDefault();
-
-                miniTelaPagamento.style.bottom = '550px';
-                miniTelaPagamento.style.right = '25px';
-
-                miniTelaPagamento.style.display = "block"
-            })
+                miniTelaPagamento.style.display = 'block';
+            }
 
             fecharMiniTela.addEventListener('click', function () {
                 miniTelaPagamento.style.display = 'none';
             })
+
+            window.onclick = function (event) {
+                if (event.target == miniTelaPagamento) {
+                    miniTelaPagamento.style.display = "none";
+                }
+            }
 
             // Script da mini-tela de cupom
             const botaoAdicionar = document.getElementById('botaoAdicionar');
