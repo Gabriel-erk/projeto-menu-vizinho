@@ -136,6 +136,131 @@
 
     <main>
 
+        <!-- mini-tela pagamento -->
+
+        <div id="pagamento" class="telaPagamento">
+
+            <div class="fundoMiniTelaPagamento">
+                <i id="fechar-mini-tela" class="fa-solid fa-times"></i>
+
+                <div id="metodo-pagamento" class="formaPagar">
+                    <div class="formaPagamento">
+
+                        <div class="imgTituloFormaPagamento">
+                            <img src="./img/pix-img.png">
+                            <p>PIX</p>
+                        </div>
+
+                    </div>
+
+                    <div class="formaPagamento">
+
+                        <div class="imgTituloFormaPagamento">
+                            <img src="./img/credit-card.png">
+                            <p>Cartão de crédito</p>
+                        </div>
+
+                        <p><a href="#">Adicionar</a></p>
+                    </div>
+
+                    <div class="formaPagamento">
+
+                        <div class="imgTituloFormaPagamento">
+                            <img src="./img/credit-card.png">
+                            <p>Cartão de débito</p>
+                        </div>
+
+                        <p><a href="#">Adicionar</a></p>
+                    </div>
+
+                </div>
+
+                <div id="pagamentoSalvo" class="formaPagar">
+                    <h3>Cartões Salvos</h3>
+
+                    <div class="formaPagamento">
+
+                        <div class="imgTituloFormaPagamento">
+                            <img src="./img/bandeiraCartao.png">
+                            <p class="nomeCartao">Mastercard ****5090</p>
+                        </div>
+
+                        <p><a href="#">Apagar</a></p>
+                    </div>
+
+                    <div class="formaPagamento">
+
+                        <div class="imgTituloFormaPagamento">
+                            <img src="./img/bandeiraCartao.png">
+                            <p class="nomeCartao">Mastercard ****5090</p>
+                        </div>
+
+                        <p><a href="#">Apagar</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- mini-tela cupom -->
+        <div id="cupom-disponivel">
+            <i id="fechar-mini-tela2" class="fa-solid fa-times"></i>
+
+            <div class="cuponsDisponiveis">
+
+                <div class="agrupaCupom">
+
+                    <div class="infoCupom">
+                        <div>
+                            <img src="./img/cupom-carrinho.png">
+                        </div>
+
+                        <div class="desc-cupom">
+                            <h2>15R$ para lanches que possuem Bacon</h2>
+                            <p>OBS: Valido para pedidos acima de 25R$</p>
+                        </div>
+
+                    </div>
+
+                    <div class="imgCupom2">
+                        <img src="./img/disponivel.webp">
+                    </div>
+                </div>
+
+                <p class="lanchesDisponiveis">VER LANCHES DISPONIVEIS
+                </p>
+
+            </div>
+
+            <div class="cuponsDisponiveis">
+
+                <div class="agrupaCupom">
+
+                    <div class="infoCupom">
+                        <div>
+                            <img src="./img/cupom-carrinho.png">
+                        </div>
+
+                        <div class="desc-cupom">
+                            <h2>15R$ para lanches que possuem Bacon</h2>
+                            <p>OBS: Valido para pedidos acima de 25R$</p>
+                        </div>
+
+                    </div>
+
+                    <div class="imgCupom2">
+                        <img src="./img/disponivel.webp">
+                    </div>
+
+                </div>
+
+                <p class="lanchesDisponiveis">VER LANCHES DISPONIVEIS
+                </p>
+
+            </div>
+        </div>
+
         <div class="listaCarrinho">
 
             <button id="limpaCarrinho">Limpar</button>
@@ -358,74 +483,6 @@
                     <a href="#" id="botaoAlterar">Alterar</a>
                 </div>
 
-                <!-- mini-tela pagamento -->
-
-                <div id="pagamento" class="telaPagamento">
-
-                    <div class="fundoMiniTelaPagamento">
-                        <i id="fechar-mini-tela" class="fa-solid fa-times"></i>
-
-                        <div id="metodo-pagamento">
-                            <div class="formaPagamento">
-
-                                <div class="imgTituloFormaPagamento">
-                                    <img src="./img/pix-img.png">
-                                    <p>PIX</p>
-                                </div>
-
-                            </div>
-
-                            <div class="formaPagamento">
-
-                                <div class="imgTituloFormaPagamento">
-                                    <img src="./img/credit-card.png">
-                                    <p>Cartão de crédito</p>
-                                </div>
-
-                                <p><a href="#">Adicionar</a></p>
-                            </div>
-
-                            <div class="formaPagamento">
-
-                                <div class="imgTituloFormaPagamento">
-                                    <img src="./img/credit-card.png">
-                                    <p>Cartão de débito</p>
-                                </div>
-
-                                <p><a href="#">Adicionar</a></p>
-                            </div>
-
-                        </div>
-
-                        <div id="pagamentoSalvo">
-                            <h3>Cartões Salvos</h3>
-
-                            <div class="formaPagamento">
-
-                                <div class="imgTituloFormaPagamento">
-                                    <img src="./img/bandeiraCartao.png">
-                                    <p class="nomeCartao">Mastercard ****5090</p>
-                                </div>
-
-                                <p><a href="#">Apagar</a></p>
-                            </div>
-
-                            <div class="formaPagamento">
-
-                                <div class="imgTituloFormaPagamento">
-                                    <img src="./img/bandeiraCartao.png">
-                                    <p class="nomeCartao">Mastercard ****5090</p>
-                                </div>
-
-                                <p><a href="#">Apagar</a></p>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                </div>
-
             </div>
 
             <div class="cupom">
@@ -462,64 +519,6 @@
                 <h1>Finalizar Compra</h1>
             </div>
 
-        </div>
-
-        <!-- mini-tela cupom -->
-        <div id="cupom-disponivel">
-            <i id="fechar-mini-tela2" class="fa-solid fa-times"></i>
-
-            <div class="cuponsDisponiveis">
-
-                <div class="agrupaCupom">
-
-                    <div class="infoCupom">
-                        <div>
-                            <img src="./img/cupom-carrinho.png">
-                        </div>
-
-                        <div class="desc-cupom">
-                            <h2>15R$ para lanches que possuem Bacon</h2>
-                            <p>OBS: Valido para pedidos acima de 25R$</p>
-                        </div>
-
-                    </div>
-
-                    <div class="imgCupom2">
-                        <img src="./img/disponivel.webp">
-                    </div>
-                </div>
-
-                <p class="lanchesDisponiveis">VER LANCHES DISPONIVEIS
-                </p>
-
-            </div>
-
-            <div class="cuponsDisponiveis">
-
-                <div class="agrupaCupom">
-
-                    <div class="infoCupom">
-                        <div>
-                            <img src="./img/cupom-carrinho.png">
-                        </div>
-
-                        <div class="desc-cupom">
-                            <h2>15R$ para lanches que possuem Bacon</h2>
-                            <p>OBS: Valido para pedidos acima de 25R$</p>
-                        </div>
-
-                    </div>
-
-                    <div class="imgCupom2">
-                        <img src="./img/disponivel.webp">
-                    </div>
-
-                </div>
-
-                <p class="lanchesDisponiveis">VER LANCHES DISPONIVEIS
-                </p>
-
-            </div>
         </div>
 
     </main>

@@ -13,7 +13,7 @@ body {
     font-family: 'Cabin', sans-serif;
     background-color: #8C6342;
     color: #fff;
-   
+
     border: none;
     border-radius: 10px;
 
@@ -41,7 +41,7 @@ body {
 .agrupaItemCarrinho {
     display: flex;
     align-items: center;
-    padding-top: 30px;
+    /* padding-top: 30px; */
 }
 
 .agrupaItemCarrinho img {
@@ -148,9 +148,9 @@ body {
     /* icone não estava aparecendo sob a img, corrigi deicando sua posição absoluta em relação ao elemento pai (elemento pai com position relative)
     * icone não estava aparecendo pois estava sendo posicionado em relação a janela do navegador, utilizando essa "combinação" de comandos, faço com que ele seja posicionao em relação ao conteiner mais proximo com a sua posição definida (posição definida = com seu position diferente do position padrão, neste caso: caixa pai com position: relative) */
     position: absolute;
-    bottom: 30px; 
-    right: 20px; 
-    
+    bottom: 30px;
+    right: 20px;
+
     /* z-index: 999; */
     padding: 8px 12px;
     border-radius: 50%;
@@ -257,7 +257,7 @@ body {
 
 .finaliza {
     text-align: center;
-   margin-bottom: 80px;
+    margin-bottom: 80px;
 
 }
 
@@ -278,33 +278,44 @@ body {
 
 /* formatando mini telas (tela de pagamento) */
 
+/* .formaPagar {
+    width: 40%;
+} */
+
 .telaPagamento {
 
-    display: block;
+    display: none;
     position: fixed;
-    
+
     left: 0;
-    right: 0;
+    top: 0;
 
     width: 100%;
     height: 100%;
 
     z-index: 999;
-   
+
     /* permite scroll, se precisar */
-    overflow: auto; 
+    overflow: auto;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4);
+
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .fundoMiniTelaPagamento {
+    /* centralizando div */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 40%;
-    height: 100%;
+
+    width: 470px;
+    height: 580px;
     border-radius: 10px;
 }
 
@@ -318,8 +329,9 @@ body {
 }
 
 #fechar-mini-tela {
-    margin-left: 510px;
-    margin-top: 10px;
+    margin-left: 440px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-size: 20px;
 }
 
@@ -333,7 +345,7 @@ body {
     /* padding: 20px; */
     padding: 15px 10px;
     /* width: 80%; */
-    width: 520px;
+    width: 450px;
     height: 90px;
 
     background-color: #F4F4F4;
@@ -364,17 +376,20 @@ body {
 /* formatando mini telas (tela de cupom) */
 
 #cupom-disponivel {
+    display: none;
+    position: absolute;
+
     width: 40%;
     height: 400px;
     background-color: #EEEEEE;
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-    position: absolute;
+    
     /* bottom: 475px; */
     /* right: 25px; */
-    display: none;
-    /* z-index: 1000; */
+    
+
 }
 
 #fechar-mini-tela2 {
@@ -385,10 +400,10 @@ body {
 
 .cuponsDisponiveis {
     background-color: #F5F5F5;
-    
+
     margin-top: 20px;
     padding: 10px 20px;
-    
+
     border: 1px solid #D9D9D9;
 
     /* border-radius: 10px; */
@@ -434,7 +449,7 @@ body {
     font-size: 14px;
 }
 
-.imgCupom2 img{
+.imgCupom2 img {
     margin-top: 15px;
     width: 30px;
 }
