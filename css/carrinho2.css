@@ -215,6 +215,10 @@ body {
     font-weight: 600;
 }
 
+#botaoAlterar:hover, #botaoAdicionar:hover {
+    color: #c22828;
+}
+
 .imgPagamentoCupom {
 
     width: 70px;
@@ -272,6 +276,7 @@ body {
 }
 
 .finaliza h1:hover {
+    cursor: pointer;
     transform: scale(1.05);
     transition: all linear 200ms;
 }
