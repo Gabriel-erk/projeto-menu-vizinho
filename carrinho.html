@@ -140,7 +140,7 @@
 
         <div id="pagamento" class="telaPagamento">
 
-            <div class="fundoMiniTelaPagamento">
+            <div class="fundoMiniTelaPagamento" id="fundoMiniTelaPagamento">
                 <i id="fechar-mini-tela" class="fa-solid fa-times"></i>
 
                 <div id="metodo-pagamento" class="formaPagar">
@@ -205,60 +205,67 @@
 
         <!-- mini-tela cupom -->
         <div id="cupom-disponivel">
-            <i id="fechar-mini-tela2" class="fa-solid fa-times"></i>
+           
 
-            <div class="cuponsDisponiveis">
+            <div class="fundoMiniTelaCupom">
 
-                <div class="agrupaCupom">
+                <i id="fechar-mini-tela2" class="fa-solid fa-times"></i>
 
-                    <div class="infoCupom">
-                        <div>
-                            <img src="./img/cupom-carrinho.png">
+                <div class="cuponsDisponiveis">
+
+                    <div class="agrupaCupom">
+
+                        <div class="infoCupom">
+                            <div>
+                                <img src="./img/cupom-carrinho.png">
+                            </div>
+
+                            <div class="desc-cupom">
+                                <h2>15R$ para lanches que possuem Bacon</h2>
+                                <p>OBS: Valido para pedidos acima de 25R$</p>
+                            </div>
+
                         </div>
 
-                        <div class="desc-cupom">
-                            <h2>15R$ para lanches que possuem Bacon</h2>
-                            <p>OBS: Valido para pedidos acima de 25R$</p>
+                        <div class="imgCupom2">
+                            <img src="./img/disponivel.webp">
                         </div>
-
                     </div>
 
-                    <div class="imgCupom2">
-                        <img src="./img/disponivel.webp">
-                    </div>
-                </div>
-
-                <p class="lanchesDisponiveis">VER LANCHES DISPONIVEIS
-                </p>
-
-            </div>
-
-            <div class="cuponsDisponiveis">
-
-                <div class="agrupaCupom">
-
-                    <div class="infoCupom">
-                        <div>
-                            <img src="./img/cupom-carrinho.png">
-                        </div>
-
-                        <div class="desc-cupom">
-                            <h2>15R$ para lanches que possuem Bacon</h2>
-                            <p>OBS: Valido para pedidos acima de 25R$</p>
-                        </div>
-
-                    </div>
-
-                    <div class="imgCupom2">
-                        <img src="./img/disponivel.webp">
-                    </div>
+                    <p class="lanchesDisponiveis">VER LANCHES DISPONIVEIS
+                    </p>
 
                 </div>
 
-                <p class="lanchesDisponiveis">VER LANCHES DISPONIVEIS
-                </p>
+                <div class="cuponsDisponiveis">
+
+                    <div class="agrupaCupom">
+
+                        <div class="infoCupom">
+                            <div>
+                                <img src="./img/cupom-carrinho.png">
+                            </div>
+
+                            <div class="desc-cupom">
+                                <h2>15R$ para lanches que possuem Bacon</h2>
+                                <p>OBS: Valido para pedidos acima de 25R$</p>
+                            </div>
+
+                        </div>
+
+                        <div class="imgCupom2">
+                            <img src="./img/disponivel.webp">
+                        </div>
+
+                    </div>
+
+                    <p class="lanchesDisponiveis">VER LANCHES DISPONIVEIS
+                    </p>
+
+                </div>
 
             </div>
+
         </div>
 
         <div class="listaCarrinho">
@@ -595,42 +602,53 @@
             // botao que abre a tela 
             const botaoAlterar = document.getElementById('botaoAlterar');
             // tela pagamento
-            const miniTelaPagamento = document.getElementById('pagamento');
+            const divPagamento = document.getElementById('pagamento');
             // botao que fecha a tela
             const fecharMiniTela = document.getElementById('fechar-mini-tela');
 
             botaoAlterar.onclick = function () {
+
                 event.preventDefault();
-                miniTelaPagamento.style.display = 'block';
+                divPagamento.style.display = 'block';
+
             }
 
             fecharMiniTela.addEventListener('click', function () {
-                miniTelaPagamento.style.display = 'none';
+
+                divPagamento.style.display = 'none';
+
             })
 
-            window.onclick = function (event) {
-                if (event.target == miniTelaPagamento) {
-                    miniTelaPagamento.style.display = "none";
+            window.onclick = function(event) {
+                if (event.target != divPagamento){
+                    divPagamento.style.display = 'none';
                 }
             }
 
             // Script da mini-tela de cupom
+
+            // botao que abre a mini tela
             const botaoAdicionar = document.getElementById('botaoAdicionar');
-            let miniTelaCupom = document.getElementById('cupom-disponivel');
+            // a mini tela
+            const miniTelaCupom = document.getElementById('cupom-disponivel');
+            // botao que fecha a mini tela
             const fecharMiniTela2 = document.getElementById('fechar-mini-tela2');
 
-            botaoAdicionar.addEventListener('click', function () {
+            botaoAdicionar.onclick = function () {
                 event.preventDefault();
-
-                miniTelaCupom.style.bottom = '475px';
-                miniTelaCupom.style.right = '25px';
-
-                miniTelaCupom.style.display = 'block';
-            })
+                miniTelaCupom.style.display = 'block'
+            }
 
             fecharMiniTela2.addEventListener('click', function () {
                 miniTelaCupom.style.display = 'none'
             })
+
+            window.onclick = function (event) {
+                if (event.target == miniTelaCupom) {
+
+                    miniTelaCupom.style.display = 'none';
+                }
+            }
 
         })
 
