@@ -129,6 +129,12 @@ body {
     transition: all linear 200ms;
 }
 
+#agrupaMenuLateral {
+    display: block;
+    width: 100%;
+    background-color: #000;
+}
+
 #menuLateral {
     position: fixed;
     /* display: none; */

@@ -318,7 +318,7 @@
 
                 <div class="produtoListaAproveiteTambem item">
                     <div class="imgProdutoAproveiteTambem">
-                        <img src="./img/duplo-cheddar.png">
+                        <img src="./img/img-corrigida/duplo-cheddar.png">
                         <div class="iconeMaisAproveiteTambem">
                             <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
                         </div>
@@ -338,7 +338,7 @@
 
                 <div class="produtoListaAproveiteTambem">
                     <div class="imgProdutoAproveiteTambem">
-                        <img src="./img/duplo-cheddar.png">
+                        <img src="./img/img-corrigida/duplo-cheddar.png">
 
                         <div class="iconeMaisAproveiteTambem">
                             <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
@@ -358,7 +358,7 @@
 
                 <div class="produtoListaAproveiteTambem">
                     <div class="imgProdutoAproveiteTambem">
-                        <img src="./img/duplo-cheddar.png">
+                        <img src="./img/img-corrigida/duplo-cheddar.png">
 
                         <div class="iconeMaisAproveiteTambem">
                             <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
@@ -403,7 +403,7 @@
 
                 <div class="produtoListaAproveiteTambem">
                     <div class="imgProdutoAproveiteTambem">
-                        <img src="./img/duplo-cheddar.png">
+                        <img src="./img/img-corrigida/duplo-cheddar.png">
                         <div class="iconeMaisAproveiteTambem">
                             <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
                         </div>
@@ -423,7 +423,7 @@
 
                 <div class="produtoListaAproveiteTambem">
                     <div class="imgProdutoAproveiteTambem">
-                        <img src="./img/duplo-cheddar.png">
+                        <img src="./img/img-corrigida/duplo-cheddar.png">
                         <div class="iconeMaisAproveiteTambem">
                             <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
                         </div>
@@ -443,7 +443,7 @@
 
                 <div class="produtoListaAproveiteTambem">
                     <div class="imgProdutoAproveiteTambem">
-                        <img src="./img/duplo-cheddar.png">
+                        <img src="./img/img-corrigida/duplo-cheddar.png">
                         <div class="iconeMaisAproveiteTambem">
                             <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
                         </div>
@@ -599,6 +599,7 @@
         document.addEventListener("DOMContentLoaded", function () {
 
             // Script da mini-tela de formas de pagamento
+
             // botao que abre a tela 
             const botaoAlterar = document.getElementById('botaoAlterar');
             // tela pagamento
@@ -620,7 +621,7 @@
             })
 
             window.onclick = function(event) {
-                if (event.target != divPagamento){
+                if (event.target == divPagamento){
                     divPagamento.style.display = 'none';
                 }
             }
