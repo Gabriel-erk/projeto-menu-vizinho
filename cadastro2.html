@@ -15,24 +15,27 @@
 
     <style>
         #centraliza {
-            width: 1150px;
+            width: 100%;
             margin-top: 40px;
-
         }
 
         #conteudo {
             border: 1px solid #ededed;
             border-radius: 30px;
-
             box-shadow: 5px 5px 10px #ccc;
+
+            /* max-width: 800px; */
         }
     </style>
 
-    <div class="mb-4" id="centraliza">
-        <main class="row">
-            <div id="conteudo" class="col-md-8 mt-3 p-4">
 
-                <div class="d-flex justify-content-between mt-3 mb-2">
+    <main class="mb-4" id="centraliza">
+
+        <div class="row">
+            <!--  mt-3 mb-3-->
+            <div id="conteudo" class="container p-4 col-md-8">
+
+                <div class="d-flex justify-content-center mt-2 mb-3">
                     <h2>Cadastro </h2>
                 </div>
 
@@ -162,15 +165,23 @@
 
                 </div>
 
+                <div class="mb-3 col-md-4">
+                    <label for="foto" class="form-label">Foto</label>
+                    <input type="submit" name="foto" id="foto" placeholder="foto"
+                        class="form-control">
+                </div>
+
                 <div class="d-flex justify-content-center">
                     <button type="submit" class="btn btn-primary  btn-lg">Cadastrar</button>
                 </div>
 
             </div>
-        </main>
+        </div>
+
+    </main>
 
 
-    </div>
+
 
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
