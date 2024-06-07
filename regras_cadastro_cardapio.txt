@@ -1,0 +1,1 @@
+mesmo cadastrando em sub-categoria (que será mostrado na tela principal) - no cadastro de cada produto é obrigatório ter uma categorias, pois, ogrigatoriamente, ao clicar em cardápio, será mostrado todas as categorias, e DEPOIS a lista de sub-categoria
