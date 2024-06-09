@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-    <link rel="stylesheet" href="./css/categorias.css">
+    <link rel="stylesheet" href="./css/cadastroBanner.css">
 
     <!-- adicionando fonte 1 (Poppins) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    
+
     <header id="cabecalho">
 
         <div id="barra-topo" class="container">
@@ -119,75 +119,143 @@
 
     </header>
 
+    <style>
+        
+        span {
+            color: #727272;
+        }
+
+        .agrupaBanner {
+
+            margin-bottom:40px;
+        }
+
+        .tituloBanner {
+            margin-left: 30px;
+        }
+        
+        .banner {
+            display: flex;
+            justify-content: center;
+        }
+
+        .fundoBanner {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-color: #ccc;
+            margin-top: 20px;
+            border-radius: 15px;
+
+            width: 1100px;
+            height: 390px;
+            
+        }
+
+        .owl-prev, .owl-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #fff;
+            border-radius: 50%;
+            padding: 15px 20px;
+            cursor: pointer;
+            z-index: 1000;
+
+            font-size: 90px;
+        }
+
+        .owl-prev {
+            left: 10px;
+        }
+
+        .owl-next {
+            right: 10px;
+        }
+
+    </style>
 
     <main>
+
         <div class="tituloDesc">
-            <h1>Categorias do Restaurante</h1>
-            <p>estas categorias serão representadas na tela inicial caso não exista nenhuma sub-categoria</p>
+            <h1>Banners do Restaurante</h1>
+            <p>banners que aparecerão na tela inicial e combos</p>
         </div>
 
-        <div class="categoriasRestaurante">
+        <div class="agrupaBanner ">
+            
+            <div class="tituloBanner">
+                <h2>Banners -<span> Ínicio</span></h2>
+            </div>
+            
+            <div class="owl-carousel">
 
-            <div class="categoria">
+                <div class="banner">
 
-                <div class="fundoImgCategoria">
-
-                    <button type="submit" class="botaoImg"><i class="fa-solid fa-plus"
-                            style="color: #000000;"></i></button>
-
+                    <div class="fundoBanner">
+                        <button type="submit" class="botaoImg"><i class="fa-solid fa-plus"
+                                style="color: #000000;"></i></button>
+                    </div>
+    
                 </div>
-
-                <div class="tituloCategoria">
-                    <input class="input" type="text" id="tituloCategoria" name="tituloCategoria"
-                        placeholder="Titulo...">
+    
+                <div class="banner">
+    
+                    <div class="fundoBanner">
+                        <button type="submit" class="botaoImg"><i class="fa-solid fa-plus"
+                                style="color: #000000;"></i></button>
+                    </div>
+    
+                </div>
+    
+                <div class="banner">
+    
+                    <div class="fundoBanner">
+                        <button type="submit" class="botaoImg"><i class="fa-solid fa-plus"
+                                style="color: #000000;"></i></button>
+                    </div>
+    
                 </div>
 
             </div>
 
-            <div class="categoria">
+        </div>
 
-                <div class="fundoImgCategoria">
-
-                    <button type="submit" class="botaoImg"><i class="fa-solid fa-plus"
-                            style="color: #000000;"></i></button>
-
-                </div>
-
-                <div class="tituloCategoria">
-                    <input class="input" type="text" id="tituloCategoria" name="tituloCategoria"
-                        placeholder="Titulo...">
-                </div>
-
+        <div class="agrupaBanner ">
+            
+            <div class="tituloBanner">
+                <h2>Banners -<span> Combos</span></h2>
             </div>
+            
+            <div class="owl-carousel">
 
-            <div class="categoria">
+                <div class="banner">
 
-                <div class="fundoImgCategoria">
-
-                    <button type="submit" class="botaoImg"><i class="fa-solid fa-plus"
-                            style="color: #000000;"></i></button>
-
+                    <div class="fundoBanner">
+                        <button type="submit" class="botaoImg"><i class="fa-solid fa-plus"
+                                style="color: #000000;"></i></button>
+                    </div>
+    
                 </div>
-
-                <div class="tituloCategoria">
-                    <input class="input" type="text" id="tituloCategoria" name="tituloCategoria"
-                        placeholder="Titulo...">
+    
+                <div class="banner">
+    
+                    <div class="fundoBanner">
+                        <button type="submit" class="botaoImg"><i class="fa-solid fa-plus"
+                                style="color: #000000;"></i></button>
+                    </div>
+    
                 </div>
-
-            </div>
-
-            <div class="categoria">
-
-                <div class="fundoImgCategoria">
-
-                    <button type="submit" class="botaoImg"><i class="fa-solid fa-plus"
-                            style="color: #000000;"></i></button>
-
-                </div>
-
-                <div class="tituloCategoria">
-                    <input class="input" type="text" id="tituloCategoria" name="tituloCategoria"
-                        placeholder="Titulo...">
+    
+                <div class="banner">
+    
+                    <div class="fundoBanner">
+                        <button type="submit" class="botaoImg"><i class="fa-solid fa-plus"
+                                style="color: #000000;"></i></button>
+                    </div>
+    
                 </div>
 
             </div>
