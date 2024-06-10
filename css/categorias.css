@@ -83,22 +83,26 @@ i {
 }
 
 .botoes {
-    
+
     margin-top: 45px;
     margin-left: 10px;
     padding: 8px 14px;
 
     background-color: #8C6342;
 
-    border-radius:4px ;
+    border-radius: 4px;
+
+    transition: filter 0.3s ease;
 }
 
 .botoes a {
     color: #fff;
     font-weight: 600;
     font-size: 18px;
+
 }
 
-.botoes a:hover {
-    color: #e6e1e1;
+.botoes:hover {
+    /* color: #e6e1e1; */
+    filter: brightness(0.9);
 }
