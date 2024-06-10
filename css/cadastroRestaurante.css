@@ -1,0 +1,42 @@
+@import url(main2.css);
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    background-color: #fff;
+}
+
+#titulo {
+    margin-top: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+.opcoesCadastro {
+    margin-top: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 25px;
+}
+
+.opcoesCadastro h3,
+.opcoesCadastro p,
+#titulo h2 {
+    margin-left: 50px;
+    font-weight: 500;
+}
+
+.opcoesCadastro h3:hover {
+    color: #555353;
+}
+
+.opcoesCadastro h3 {
+    color: #000000;
+}
+
+.opcoesCadastro p {
+    color: #716B6B;
+}
+
+/* .opcaoFinal {
+    border-bottom: none;
+} */
