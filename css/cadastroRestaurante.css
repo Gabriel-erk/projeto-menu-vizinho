@@ -16,6 +16,8 @@ body {
     margin-top: 20px;
     border-bottom: 1px solid #ccc;
     padding-bottom: 25px;
+
+    transition: all 0.3s ease;
 }
 
 .opcoesCadastro h3,
@@ -25,12 +27,14 @@ body {
     font-weight: 500;
 }
 
-.opcoesCadastro h3:hover {
-    color: #555353;
-}
-
 .opcoesCadastro h3 {
     color: #000000;
+    transition: color 0.3s ease;
+}
+
+.opcoesCadastro h3:hover {
+    /* color: #555353; */
+    color: #424242
 }
 
 .opcoesCadastro p {
