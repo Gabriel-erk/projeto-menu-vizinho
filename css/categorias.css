@@ -7,7 +7,6 @@ body {
 .categoriasRestaurante {
 
     display: flex;
-    /* justify-content: space-between; */
 
     margin-left: 40px;
     margin-right: 40px;
@@ -41,6 +40,14 @@ body {
 
     border-radius: 8px;
 
+    transition: all 0.3s ease;
+
+}
+
+.fundoImgCategoria:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
 }
 
 .botaoImg {
@@ -51,11 +58,15 @@ body {
     border-radius: 5px;
 
     background-color: #fff;
+    transition: all 0.3s ease;
 
 }
 
 .botaoImg:hover {
     cursor: pointer;
+
+    background-color: #e9ecef;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 i {
@@ -69,12 +80,31 @@ i {
     border-radius: 5px;
 
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 17px;
     padding-left: 8px;
 
     width: 250px;
 
     margin-top: 10px;
+
+    font-family: 'Poppins', sans-serif;
+
+    transition: all 0.3s ease;
+}
+
+.input:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+    background-color: #f0f0f0;
+    border-color: #8C6342;
+}
+
+.input:focus {
+    outline: none;
+    background-color: #fff;
+    border-color: #8C6342;
+    box-shadow: 0 0 8px rgba(140, 99, 66, 0.8);
 }
 
 .agrupaBotoes {
