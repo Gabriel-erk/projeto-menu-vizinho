@@ -8,11 +8,24 @@
     font-weight: bold;
     font-size: 25px;
     color: #727272;
-    margin-bottom: 20px;
+
+    margin-top: 25px;
+    /* margin-bottom: 20px; */
 }
 
+.tituloDesc {
+    margin-bottom: 0;
+}
+
+/* 
 .conteudo {
-    margin-left: 35px
+    padding-left: 35px
+} */
+
+.cupom {
+    padding-left: 35px;
+    padding-bottom:50px;
+    border-bottom: 1px solid #000000;
 }
 
 .campoDividido {
