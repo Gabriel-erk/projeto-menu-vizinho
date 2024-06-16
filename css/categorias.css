@@ -8,7 +8,7 @@ body {
 
     display: flex;
 
-    justify-content: center;
+    justify-content: space-between;
     
     margin-left: 40px;
     margin-right: 40px;
@@ -23,10 +23,6 @@ body {
 
 .tituloDesc p {
     color: #716B6B;
-}
-
-.categoria {
-    margin-right: 90px;
 }
 
 .fundoImgCategoria {
