@@ -1,4 +1,8 @@
-@import url(main.css);
+@import url(main2.css);
+
+body {
+    background-color: #fff;
+}
 
 .container{
     font-family: 'Poppins', sans-serif;

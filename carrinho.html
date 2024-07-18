@@ -6,50 +6,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr.Burger - Sua Lanchonete Local!</title>
 
-    <!-- css externos -->
+    <!-- css carrosel -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-    <link rel="stylesheet" href="./css/carrinho.css">
+    <link rel="stylesheet" href="./css/carrinho2.css">
 
-    <!-- adicionando fontes -->
+    <!-- adicionando fonte 1 (Poppins) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- adicionando fonte 2 (Cabin) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <!-- adicionando fonte 3 (Signika Negative) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- adicionando fonte 4 (Titan One) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&family=Titan+One&display=swap"
+        rel="stylesheet">
+
+    <!-- adicionando fonte 5 (baloo bhai) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet">
 
     <!-- adicionando dependencia de icone (fontawesome)-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
     <header id="cabecalho">
 
         <div id="barra-topo" class="container">
+
             <div class="logotipo">
-                <a href="index.html"><img src="img/logo-2.png" alt="Mr.Burger" width="60"></a>
+                <a href="index.html">
+                    <img src="/img/bua3.png" alt="" srcset="">
+                </a>
+
             </div>
 
             <nav id="menu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="ofertas.html">Ofertas</a></li>
-                    <li><a href="cardapio.html">Cardápio</a></li>
-                    <li><a href="cupons.html">Cupons</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="ofertas.html">OFERTAS</a></li>
+                    <li><a href="cardapio.html">CARDÁPIO</a></li>
+                    <li><a href="cupons.html">CUPONS</a></li>
                 </ul>
             </nav>
 
             <div id="botoes">
-                <div class="icones">
-                    <a href="login.html">
-                        <i class="fa-solid fa-user" style="color: #ffffff;"></i>
-                    </a>
+                <div class="buttonMenu">
 
-                    <a href="carrinho.html" class="carrinho-icon">
-                        <i class="fa-solid fa-cart-shopping" style="color: #fff;"></i>
-                        <span id="contador-carrinho" class="esconder">0</span>
-                    </a>
+                    <div id="contador-carrinho">
+                        <span>0</span>
+                    </div>
+
+                    <div class="agrupaCarrinho alinharBotoes">
+                        <a href="carrinho.html"> <i class="fa-solid fa-bag-shopping" style="color: #ffffff;"></i></a>
+                    </div>
+
+                    <div class="iconeMenuLateral alinharBotoes">
+                        <i class="fa-solid fa-bars" id="iconeMenu"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="agrupaMenuLateral">
+            <div id="menuLateral">
+                <div class="iconeFechaMenu"> <i id="fechar-menu" class="fa-solid fa-times"></i></div>
+
+                <nav>
+                    <ul>
+                        <li><i class="fa-solid fa-house" style="color: #000000;"></i>
+                            <a href="#">Minha Conta</a>
+                        </li>
+
+                        <li> <i class="fa-solid fa-user" style="color: #000000;"></i>
+                            <a href="#">Meus Dados</a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-basket-shopping" style="color: #000000;"></i>
+                            <a href="#">Meus Pedidos</a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-heart" style="color: #000000;"></i>
+                            <a href="#">Favoritos</a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-handshake" style="color: #000000;"></i>
+                            <a href="#">Seja um dos nossos
+                                parceiros</a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <div class="botaoLoginCadastro">
+
+                    <button><a href="login.html">Login</a></button>
+                    <button><a href="cadastro.html">Cadastrar</a></button>
+
                 </div>
             </div>
 
@@ -57,12 +134,148 @@
 
     </header>
 
-    <main class="container">
+    <main>
 
+        <!-- mini-tela pagamento -->
+
+        <div id="pagamento" class="telaPagamento">
+
+            <div class="fundoMiniTelaPagamento" id="fundoMiniTelaPagamento">
+                <i id="fechar-mini-tela" class="fa-solid fa-times"></i>
+
+                <div id="metodo-pagamento" class="formaPagar">
+                    <div class="formaPagamento">
+
+                        <div class="imgTituloFormaPagamento">
+                            <img src="./img/pix-img.png">
+                            <p>PIX</p>
+                        </div>
+
+                    </div>
+
+                    <div class="formaPagamento">
+
+                        <div class="imgTituloFormaPagamento">
+                            <img src="./img/credit-card.png">
+                            <p>Cartão de crédito</p>
+                        </div>
+
+                        <p><a href="#">Adicionar</a></p>
+                    </div>
+
+                    <div class="formaPagamento">
+
+                        <div class="imgTituloFormaPagamento">
+                            <img src="./img/credit-card.png">
+                            <p>Cartão de débito</p>
+                        </div>
+
+                        <p><a href="#">Adicionar</a></p>
+                    </div>
+
+                </div>
+
+                <div id="pagamentoSalvo" class="formaPagar">
+                    <h3>Cartões Salvos</h3>
+
+                    <div class="formaPagamento">
+
+                        <div class="imgTituloFormaPagamento">
+                            <img src="./img/bandeiraCartao.png">
+                            <p class="nomeCartao">Mastercard ****5090</p>
+                        </div>
+
+                        <p><a href="#">Apagar</a></p>
+                    </div>
+
+                    <div class="formaPagamento">
+
+                        <div class="imgTituloFormaPagamento">
+                            <img src="./img/bandeiraCartao.png">
+                            <p class="nomeCartao">Mastercard ****5090</p>
+                        </div>
+
+                        <p><a href="#">Apagar</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- mini-tela cupom -->
+        <div id="cupom-disponivel">
+
+
+            <div class="fundoMiniTelaCupom">
+
+                <i id="fechar-mini-tela2" class="fa-solid fa-times"></i>
+
+                <div class="cuponsDisponiveis">
+
+                    <div class="agrupaCupom">
+
+                        <div class="infoCupom">
+                            <div>
+                                <img src="./img/cupom-carrinho.png">
+                            </div>
+
+                            <div class="desc-cupom">
+                                <h2>15R$ para lanches que possuem Bacon</h2>
+                                <p>OBS: Valido para pedidos acima de 25R$</p>
+                            </div>
+
+                        </div>
+
+                        <div class="imgCupom2">
+                            <img src="./img/disponivel.webp">
+                        </div>
+                    </div>
+
+                    <p class="lanchesDisponiveis">VER LANCHES DISPONIVEIS
+                    </p>
+
+                </div>
+
+                <div class="cuponsDisponiveis">
+
+                    <div class="agrupaCupom">
+
+                        <div class="infoCupom">
+                            <div>
+                                <img src="./img/cupom-carrinho.png">
+                            </div>
+
+                            <div class="desc-cupom">
+                                <h2>15R$ para lanches que possuem Bacon</h2>
+                                <p>OBS: Valido para pedidos acima de 25R$</p>
+                            </div>
+
+                        </div>
+
+                        <div class="imgCupom2">
+                            <img src="./img/disponivel.webp">
+                        </div>
+
+                    </div>
+
+                    <p class="lanchesDisponiveis">VER LANCHES DISPONIVEIS
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
 
         <div class="listaCarrinho">
-            <div class="agrupaCarrinho">
+
+            <button id="limpaCarrinho">Limpar</button>
+
+            <div class="agrupaItemCarrinho">
                 <img src="./img/cheeseburguer.png">
+
+
                 <div class="info-lanche">
                     <h2>Mrs. King Cheddar Extra</h2>
                     <p class="descricao">Um hambúrguer com duas carnes bovinas grelhad...</p>
@@ -71,14 +284,16 @@
 
                 <div class="quantidadeCarrinho">
                     <div class="iconeValorCarrinho">
-                        <i class="fa-solid fa-minus" style="color: #ff0004;"></i>
+                        <i class="fa-solid fa-minus" style="color: #8C6342;"></i>
                         <strong>0</strong>
-                        <i class="fa-solid fa-plus" style="color: #ff0004;"></i>
+                        <i class="fa-solid fa-plus" style="color: #8C6342;"></i>
                     </div>
                 </div>
+
+
             </div>
 
-            <div class="agrupaCarrinho">
+            <div class="agrupaItemCarrinho">
                 <img src="./img/duplo-cheddar.png">
                 <div class="info-lanche">
                     <h2>Mrs. King Cheddar Extra</h2>
@@ -88,9 +303,9 @@
 
                 <div class="quantidadeCarrinho">
                     <div class="iconeValorCarrinho">
-                        <i class="fa-solid fa-minus" style="color: #ff0004;"></i>
+                        <i class="fa-solid fa-minus" style="color: #8C6342;"></i>
                         <strong>0</strong>
-                        <i class="fa-solid fa-plus" style="color: #ff0004;"></i>
+                        <i class="fa-solid fa-plus" style="color: #8C6342;"></i>
                     </div>
 
                 </div>
@@ -99,42 +314,154 @@
 
         <div class="aproveiteTambem">
             <h2>Aproveite Também</h2>
-            <div class="listaAproveiteTambem">
+            <div class="listaAproveiteTambem owl-carousel">
 
-                <div class="produtoListaAproveiteTambem">
-                    <img src="./img/duplo-cheddar.png">
-                    <div class="tituloAproveiteTambem">
-                        <h3>Combo Mrs.Duplo Cheddar</h3>
+                <div class="produtoListaAproveiteTambem item">
+                    <div class="imgProdutoAproveiteTambem">
+                        <img src="./img/img-corrigida/duplo-cheddar.png">
+                        <div class="iconeMaisAproveiteTambem">
+                            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+
+                    <div class="informacoesProdutoAproveiteTambem">
+                        <div class="tituloValorAproveiteTambem">
+                            <h3>Combo Mrs.Duplo Cheddar</h3>
+                            <p>$15.90</p>
+                        </div>
+                        <div class="descricaoProdutoAproveiteTambem">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec velit eu ligula
+                                vestibulum ullamcorper vel eget libero.</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="produtoListaAproveiteTambem">
-                    <img src="./img/duplo-cheddar.png">
-                    <div class="tituloAproveiteTambem">
-                        <h3>Combo Mrs.Duplo Cheddar</h3>
+                    <div class="imgProdutoAproveiteTambem">
+                        <img src="./img/img-corrigida/duplo-cheddar.png">
+
+                        <div class="iconeMaisAproveiteTambem">
+                            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                    <div class="informacoesProdutoAproveiteTambem">
+                        <div class="tituloValorAproveiteTambem">
+                            <h3>Combo Mrs.Duplo Cheddar</h3>
+                            <p>$15.90</p>
+                        </div>
+                        <div class="descricaoProdutoAproveiteTambem">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec velit eu ligula
+                                vestibulum ullamcorper vel eget libero.</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="produtoListaAproveiteTambem">
-                    <img src="./img/duplo-cheddar.png">
-                    <div class="tituloAproveiteTambem">
-                        <h3>Combo Mrs.Duplo Cheddar</h3>
+                    <div class="imgProdutoAproveiteTambem">
+                        <img src="./img/img-corrigida/duplo-cheddar.png">
+
+                        <div class="iconeMaisAproveiteTambem">
+                            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                    <div class="informacoesProdutoAproveiteTambem">
+                        <div class="tituloValorAproveiteTambem">
+                            <h3>X-Salada</h3>
+                            <p>$15.90</p>
+                        </div>
+                        <div class="descricaoProdutoAproveiteTambem">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec velit eu ligula
+                                vestibulum ullamcorper vel eget libero.</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="produtoListaAproveiteTambem">
-                    <img src="./img/duplo-cheddar.png">
-                    <div class="tituloAproveiteTambem">
-                        <h3>Combo Mrs.Duplo Cheddar</h3>
+                    <div class="imgProdutoAproveiteTambem">
+                        <img src="./img/img-corrigida/duplo-cheddar.png">
+
+                        <div class="iconeMaisAproveiteTambem">
+                            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="iconeAdicionarAproveiteTambem">
+
+                        </div>
+                    </div>
+
+                    <div class="informacoesProdutoAproveiteTambem">
+                        <div class="tituloValorAproveiteTambem">
+                            <h3>Combo Mrs.Duplo Cheddar</h3>
+                            <p>$15.90</p>
+                        </div>
+                        <div class="descricaoProdutoAproveiteTambem">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec velit eu ligula
+                                vestibulum ullamcorper vel eget libero.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="produtoListaAproveiteTambem">
+                    <div class="imgProdutoAproveiteTambem">
+                        <img src="./img/img-corrigida/duplo-cheddar.png">
+                        <div class="iconeMaisAproveiteTambem">
+                            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+
+                    <div class="informacoesProdutoAproveiteTambem">
+                        <div class="tituloValorAproveiteTambem">
+                            <h3>Combo Mrs.Duplo Cheddar</h3>
+                            <p>$15.90</p>
+                        </div>
+                        <div class="descricaoProdutoAproveiteTambem">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec velit eu ligula
+                                vestibulum ullamcorper vel eget libero.</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="produtoListaAproveiteTambem">
-                    <img src="./img/duplo-cheddar.png">
-                    <div class="tituloAproveiteTambem">
-                        <h3>Combo Mrs.Duplo Cheddar</h3>
+                    <div class="imgProdutoAproveiteTambem">
+                        <img src="./img/img-corrigida/duplo-cheddar.png">
+                        <div class="iconeMaisAproveiteTambem">
+                            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+
+                    <div class="informacoesProdutoAproveiteTambem">
+                        <div class="tituloValorAproveiteTambem">
+                            <h3>Combo Mrs.Duplo Cheddar</h3>
+                            <p>$15.90</p>
+                        </div>
+                        <div class="descricaoProdutoAproveiteTambem">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec velit eu ligula
+                                vestibulum ullamcorper vel eget libero.</p>
+                        </div>
                     </div>
                 </div>
+
+                <div class="produtoListaAproveiteTambem">
+                    <div class="imgProdutoAproveiteTambem">
+                        <img src="./img/img-corrigida/duplo-cheddar.png">
+                        <div class="iconeMaisAproveiteTambem">
+                            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+
+                    <div class="informacoesProdutoAproveiteTambem">
+                        <div class="tituloValorAproveiteTambem">
+                            <h3>Combo Mrs.Duplo Cheddar</h3>
+                            <p>$15.90</p>
+                        </div>
+                        <div class="descricaoProdutoAproveiteTambem">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec velit eu ligula
+                                vestibulum ullamcorper vel eget libero.</p>
+                        </div>
+                    </div>
+                </div>
+
+
 
             </div>
         </div>
@@ -143,33 +470,45 @@
             <h3>Pagamento pelo site</h3>
             <div class="pagamento">
 
-                <div class="imgPagamentoCupom">
-                    <img src="./img/credit-card.png" height="50px">
-                </div>
+                <div class="img-texto-pagamento">
 
-                <div class="textoPagamento">
-                    <h4>Crédito</h4>
-                    <p>Mastercard ****5090</p>
+                    <div class="imgPagamentoCupom">
+                        <img src="./img/credit-card.png" height="50px">
+
+                    </div>
+
+                    <div class="textoPagamento">
+                        <h4>Crédito</h4>
+                        <p>Mastercard ****5090</p>
+                    </div>
+
                 </div>
 
                 <div class="botaoAlterar">
-                    <a href="#">Alterar</a>
+
+
+                    <a href="#" id="botaoAlterar">Alterar</a>
                 </div>
+
             </div>
 
             <div class="cupom">
 
-                <div class="imgPagamentoCupom">
-                    <img src="./img/cupom-carrinho.png" height="45px">
-                </div>
+                <div class="img-texto-pagamento">
 
-                <div class="textoPagamento">
-                    <h4>Cupom</h4>
-                    <p>3 cupons disponiveis para compra</p>
+                    <div class="imgPagamentoCupom">
+                        <img src="./img/cupom-carrinho.png">
+                    </div>
+
+                    <div class="textoPagamento">
+                        <h4>Cupom</h4>
+                        <p>3 cupons disponiveis para compra</p>
+                    </div>
+
                 </div>
 
                 <div class="botaoAlterar">
-                    <a href="#">Adicionar</a>
+                    <a href="#" id="botaoAdicionar">Adicionar</a>
                 </div>
 
             </div>
@@ -183,55 +522,144 @@
                 <p>Total: 20,90</p>
             </div>
 
-            <h1>Finalizar Compra</h1>
+            <div class="finaliza">
+                <h1>Finalizar Compra</h1>
+            </div>
+
         </div>
 
     </main>
 
     <footer id="rodape">
-        <div class="container">
-            <div class="coluna-rodape">
-                <div class="linha-rodape fonte-2">
-                    <h1>Contato</h1>
+        <div class="container agrupaRodape">
+
+            <div class="colunaRodape">
+
+                <div class="infoRestaurante linhaRodape">
+
+                    <div class="rodape-logo">
+                        <a href="index.html"><img src="img/bua3.png" href="index.html"></a>
+
+                    </div>
+
+                    <p>Necessary, making this the first true generator on the Internet. It uses a dictionary of over
+                    </p>
+
+                    <div class="redesRestaurante">
+                        <div class="icone"><a href="https://facebook.com"><i class="fa-brands fa-facebook-f"
+                                    style="color: #000000;"></i></a></div>
+
+                        <div class="icone">
+                            <a href="https://instagram.com"><i class="fa-brands fa-instagram"
+                                    style="color: #000000;"></i></a>
+                        </div>
+
+                        <div class="icone">
+                            <a href="https://twitter.com"><i class="fa-brands fa-x-twitter"
+                                    style="color: #000000;"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="linhaRodape">
+                    <h2>Links Rápidos</h2>
                     <ul>
-                        <li>lanchonete@gmail.com</li>
-                        <li>14 82764-9301</li>
-                        <li>14 82764-9301</li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cardapio.html">Menu</a></li>
+                        <li><a href="#">Àrea do usuário</a></li>
                     </ul>
                 </div>
 
-                <div class="linha-rodape fonte-2">
-                    <h1>Mr.Burger</h1>
+                <div class="linhaRodape">
+                    <h2>Sobre Nós</h2>
                     <ul>
+                        <li><a href="#">Localização</a></li>
+                        <li><a href="politica.html">Políticas</a></li>
                         <li><a href="sobre.html">Sobre Nós</a></li>
-                        <li><a href="politica.html">Política de Privacidade</a></li>
                     </ul>
                 </div>
 
-                <div class="linha-rodape rede-social">
-                    <h1>Redes Sociais</h1>
+                <div class="linhaRodape">
+                    <h2>Contato</h2>
                     <ul>
-                        <a href="https://instagram.com"><img src="img/instagram.webp" alt="Instagram" width="50"></a>
-
-                        <a href="https://facebook.com"><img src="img/facebook.webp" alt="Facebook" width="50"></a>
+                        <li>Rua São Luís</li>
+                        <li>(11) 12233-2414</li>
+                        <li>demo@gmail.com</li>
                     </ul>
                 </div>
 
             </div>
 
-            <div class="copy fonte-2">
-                <p>© 2023 - Todos os direitos são reservados</p>
-            </div>
         </div>
     </footer>
+
+    <script>
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            // Script da mini-tela de formas de pagamento
+
+            // botao que abre a tela 
+            const botaoAlterar = document.getElementById('botaoAlterar');
+            // tela pagamento
+            const divPagamento = document.getElementById('pagamento');
+            // botao que fecha a tela
+            const fecharMiniTela = document.getElementById('fechar-mini-tela');
+
+            botaoAlterar.onclick = function () {
+
+                event.preventDefault();
+                divPagamento.style.display = 'block';
+
+            }
+
+            fecharMiniTela.addEventListener('click', function () {
+
+                divPagamento.style.display = 'none';
+
+            })
+
+            window.onclick = function (event) {
+                if (event.target == divPagamento) {
+                    divPagamento.style.display = 'none';
+                }
+            }
+
+            // Script da mini-tela de cupom
+
+            // botao que abre a mini tela
+            const botaoAdicionar = document.getElementById('botaoAdicionar');
+            // a mini tela
+            const miniTelaCupom = document.getElementById('cupom-disponivel');
+            // botao que fecha a mini tela
+            const fecharMiniTela2 = document.getElementById('fechar-mini-tela2');
+
+            botaoAdicionar.onclick = function () {
+                event.preventDefault();
+                miniTelaCupom.style.display = 'block'
+            }
+
+            fecharMiniTela2.addEventListener('click', function () {
+                miniTelaCupom.style.display = 'none'
+            })
+
+            window.onclick = function (event) {
+                if (event.target == miniTelaCupom) {
+
+                    miniTelaCupom.style.display = 'none';
+                }
+            }
+
+        })
+
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-
 </body>
 
 </html>
